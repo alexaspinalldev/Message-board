@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="row p-2">
+  <a id="back" href="/catalogue/">&laquo; Back</a>
+</div>
+<div class="row">
+  <div class="col-12 col-md-4 d-flex justify-content-center pb-4" id="product-main">
+    {% if "default" in coffee.product_image.url %}
+    <img class="card-img-top" src="{% static 'images/coffee-beans.webp' %}" alt="default image">
+    {% else %}
+    <img class="card-img-top" src="{{ coffee.product_image.url }}" alt="{{ coffee.coffee_name }}">
+    {% endif %}
+  </div>
+  <div class="col-12 col-md-8 p-4 p-md-3">
+    <div class="d-flex justify-content-between">
+      <h1 class="m-0">{{coffee.coffee_name}}</h1>
+      <div class="nav-buttons">
+        {% if user.is_authenticated and user.id == coffee.vendor.id %}
+        <button type="button" class="btn btn-dark" id="editBtn">Edit listing</button>
+        <button type="button" class="btn btn-dark" id="deleteBtn">Delete listing</button>
+        {% endif %}
+      </div>
+    </div>
+    <h2 class="h5 mb-3">by {{coffee.vendor.first_name}}</h2>
+    <ul>
+      <li class="h6 m-0">Bean: {{coffee.bean}}</li>
+      <li class="h6 m-0">Origin: {{coffee.origin}}</li>
+      <li class="h6 m-0">Taste profile: {{coffee.taste_profile}}</li>
+      <li class="h6 m-0">Roast: {{coffee.roast}}</li>
+    </ul>
+    <div class="coffeeDesc p-2">
+      <div>{{coffee.description | linebreaks}}</div>
+      <div class="vendorAbout mt-5 px-5">"{{coffee.vendor.vendorabout.about}}"</div>
+    </div> 
+  </div>
+</div>
+
+<!-- Delete confirmation modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteModalLabel">Delete coffee?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to delete your coffee?
+        This action cannot be undone.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+        <a id="deleteConfirm" href="#" class="btn
+          btn-dark">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Edit modal -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editModalLabel">Edit coffee</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form method="POST" action="edit/" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="modal-body">
+          <!-- Coffee Name -->
+          <label for="coffee_name">Coffee Name:</label>
+          <input type="text" id="coffee_name" name="coffee_name" maxlength="255" class="mb-2" value="{{coffee.coffee_name}}" required>
+          <!-- Origin -->
+          <label for="origin">Origin (Country):</label>
+          <input type="text" id="origin" name="origin" maxlength="100" value="{{coffee.origin}}" class="mb-2" required>
+          <!-- Bean Type -->
+          <label for="bean">Bean Type:</label>
+          <select id="bean" name="bean" class="mb-2" required>
+            <option disabled selected value></option>
+            <option value="arabica">Arabica</option>
+            <option value="excelsa">Excelsa</option>
+            <option value="robusta">Robusta</option>
+            <option value="liberica">Liberica</option>
+          </select>
+          <!-- Taste Profile -->
+          <label for="taste_profile">Taste Profile:</label>
+          <input type="text" id="taste_profile" name="taste_profile" maxlength="255" class="mb-2" value="{{coffee.taste_profile}}" required>
+          <!-- Roast Level -->
+          <label for="roast">Roast Level:</label>
+          <select id="roast" name="roast" class="mb-2" required>
+            <option disabled selected value></option>
+            <option value="light">Light</option>
+            <option value="medium">Medium</option>
+            <option value="dark">Dark</option>
+          </select>
+          <!-- Description -->
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" rows="5" cols="40" class="mb-2" required>{{coffee.description}}</textarea>
+          <!-- Image -->
+          <label for="product_image">Product image:</label>
+          <input type="file" id="product_image" name="product_image" accept="image/*">
+          <p style="font-size: 14px;">Ignore if you do not wish to change the product image</p>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-dark">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- CRUD URLS -->
+<script defer src="{% static 'js/listing-edit-delete.js' %}">
+</script>
+
+{% endblock %}

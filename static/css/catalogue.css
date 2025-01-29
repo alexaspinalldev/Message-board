@@ -1,0 +1,204 @@
+
+
+nav {
+    background-color: var(--nav-color);
+}
+
+#topNav {
+    box-shadow:  0 0 8px #626262;
+    z-index: 1050;
+}
+  
+.navbar-brand img {
+    height: 3rem;
+    margin-left: 1rem;
+}
+
+#sidebar-btn:hover svg {
+    fill: #FFF;
+    stroke: #FFF;
+}
+
+#sidebar {
+    background-color: var(--secondary-color);
+    width: 10%;
+    min-width: 300px;
+    padding-top: 74px;
+}
+
+#sidebarHeader{
+    display: flex;
+}
+
+h1 {
+    color: var(--heading-color);
+}
+
+.h6 {
+    color: var(--tertiary-color);
+    font-style: italic;
+    font-weight: 300;
+}
+
+.card {
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column; */
+    height: 100%;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    animation: scroll-fade linear both;
+    animation-timeline: view();
+    animation-range: entry 0% contain 8%;
+}
+
+@keyframes scroll-fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card-top {
+    overflow: hidden;
+    aspect-ratio: 4/2.5;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-top img {
+    transition: transform 1s ease-out;
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+a .card-top img:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    font-style: italic;
+    border-radius: 50px;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    background-color: var(--secondary-color);
+}
+
+.bean-icon {
+    height: 1rem;
+    display: inline;
+    margin: -1px;
+}
+
+.alert {
+    position: absolute;
+    border: 2px solid var(--heading-color);
+    width: fit-content;
+    z-index: 1060;
+    background-color: white;
+    margin: 0;
+    top: 4rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow:  0 0 8px #626262;
+}
+
+.success {
+    color: #34623F;
+}
+
+.error {
+    color: #6F1F1F;
+}
+
+#loadingModal img {
+    animation: bounce .5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: bounce;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0, -5px, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes bounce {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, -5px, 0);
+        transform: translate3d(0, -5px, 0);
+        opacity: 1;
+    }
+}
+
+
+/* ------------------------------ Coffee detail ------------------------------ */
+
+.vendorAbout {
+    text-align: center;
+    font-style: italic;
+    color: var(--tertiary-color);
+}
+
+#product-main img {
+    object-fit: contain;
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-height: 612px;
+    max-width: 100%;
+}
+
+/* ------------------------------ Login/Logout/Signup ------------------------------ */
+.logout-image {
+    max-width: 100%;
+    max-height: 550px;
+    object-fit: contain;
+}
+
+
+/* ------------------------------ FOOTER ------------------------------ */
+.footer-image {
+    height: 10vw;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 0%;
+}
+
+.subfooter {
+    background-color: #000;
+    color: #FFF;
+    font-size: 1rem;
+    z-index: 100;
+    display: flex;
+    gap: 15px;
+}
+
+.subfooter a {
+    text-decoration: underline;
+}

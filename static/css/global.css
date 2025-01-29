@@ -1,0 +1,65 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+/*  Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: currentColor;
+  display: block;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+/* CSS variables */
+:root {
+  --nav-color: #C1B098;
+  --heading-color: #6a3c22;
+  --secondary-color: #E7DFC9;
+  --tertiary-color: #626262;
+  --highlight-color: orange;
+}
+
+/* Global styles */
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: #FFF;
+}
+
+a:hover {
+  text-decoration: underline;
+}
