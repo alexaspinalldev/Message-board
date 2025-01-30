@@ -14,6 +14,16 @@
     --purple: #881CA6;
 }
 
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--body-font);
+}
+
 /* Landing page */
 body {
     display: flex;
@@ -75,10 +85,10 @@ body {
 
 .envelope-button {
     display: block;
-    width: 100px;
-    height: 60px;
+    width: 120px; /* Increased for better view */
+    height: 70px; /* Increased for better view */
     position: relative;
-    background: #f4b400;
+    background: var(--yellow);
     border-radius: 5px;
     text-decoration: none;
     overflow: hidden;
@@ -90,32 +100,20 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 30px;
-    background: #f1a900;
-    clip-path: polygon(0 0, 100% 0, 50% 100%);
-    transition: transform 0.3s ease-in-out;
+    height: 40px; /* Increase the height for a more noticeable triangle */
+    background: #eecb31;
+    clip-path: polygon(0 0, 100% 0, 50% 100%); /* Upside-down triangle */
 }
 
-.body {
+.envelope-body {
     position: absolute;
-    top: 10px;
+    top: 40px; /* Move the body down to accommodate the flap */
     left: 0;
     width: 100%;
     height: 50px;
-    background: #f4b400;
+    background: var(--yellow);
 }
 
-.bottom-flap {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    background: #f1a900;
-    clip-path: polygon(50% 0, 0 100%, 100% 100%);
-}
-
-/* Hover Effect */
-.envelope-button:hover .top-flap {
-    transform: translateY(-15px);
+.button-text {
+    font-family: var(--body-font);
 }
