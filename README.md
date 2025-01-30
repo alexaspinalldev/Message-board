@@ -62,7 +62,17 @@ Message Board features a bold and vibrant colour palette, designed to create a w
 ![Message Board colour palette](assets/images)
 </details>
 
+### Imagery
 
+All imagery for Message Board is from Canva, including the logo design and customisable graphics.
+
+**Insert image** 
+<details><summary>View</summary>
+
+![Message Board imagery](assets/images)
+</details>
+
+### Wireframes
 
 
 
@@ -71,10 +81,6 @@ Message Board features a bold and vibrant colour palette, designed to create a w
 <img src="static/images/README/Catalogue.png" style="width: 32%"></img>
 <img src="static/images/README/CoffeeDetail.png" style="width: 32%"></img>
     
-### Design Rationale:
-- The core design of the site is based on similar simple webstore/catalogue sites. This was chosen in the interest of visual minimalism and the Jakob's Law principle. I added a simple landing page as a canvas to give the site more of an identity to follow the "exotic" nature of the brand.
-- I made a concious effort to lean into the Bootstrap defaults where possible with regards to things like font sizing, as in the past I have needlessly complicated my styling and slowed me down. One notable advantage of this is more appropriate use of HTML semantics, improving experience for users of screen readers.
-
 ## Key Features
 - **Filter by your listings:** Logged in Vendors can filter the list view to show only their listings. If they do not have any approved listings to show, Django will return a message to them confiming that this is not an error, rather than leaving simply a blank page.
 - **Coffee detail:** Clicking into a coffee listing displays summed information from both the "Coffee" and "Vendor" tables.
