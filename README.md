@@ -1,6 +1,7 @@
 # Message Board
 
 **Insert image**
+![Message Board header](assets/images)
 
 ## Introduction
 Message Board is a full-stack web application that allows users to post messages for others to see. Whether it’s a note of appreciation, a public announcement, or a simple thought to share, the site provides a clean and easy way to express yourself. Leveraging Django, Message Board seamlessly manages user authentication and message posting, all within a welcoming user experience.
@@ -42,26 +43,28 @@ The <a href="" target="_blank">project board</a> shows the complete user stories
 * As a ...
 </details>
 
-### Graphic design and visual assets:
-- [Selected colour palette](https://coolors.co/4f3221-34623f-ffee7d-c1b098-ffffff)
+## Branding
 
-- Logo:<br>
-<img src="static/images/tj-logo.webp" style="border: 1px solid white; padding: 10px; width: 40%"></img>
+**Insert image**
+![Message Board branding](assets/images)
 
-- Image credits:<br>
-  - [Ashlyn Ciara](https://unsplash.com/@ashlynciara?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/a-man-in-a-hat-picking-berries-from-a-bush-4rbWwrtMQ1c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+### Fonts
 
-  - [wojtal78](https://www.istockphoto.com/portfolio/wojtal78?mediatype=photography) on [iStockPhoto](https://www.istockphoto.com/photo/coffee-bag-gm509212479-45793256?searchscope=image%2Cfilm)
+Message Board uses 'Luckiest Guy' as a bold, mostly uppercase heading font and 'Shadows Into Light Two' for a body text that mimics handwriting. Both fonts are sourced from Google Fonts and there is a backup of 'sans-serif' applied on the site.
 
-  - [PROJETO CAFÉ GATO-MOURISCO](https://unsplash.com/@projetocafegatomourisco?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/a-lush-green-hillside-covered-in-lots-of-trees-zOVRgigQMQA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)
+### Colour Palette
 
-  - [Nitin Khajotia on Pexels](https://www.pexels.com/video/a-view-of-a-lush-green-valley-with-mountains-in-the-background-19669269/)
+Message Board features a bold and vibrant colour palette, designed to create a welcoming and engaging experience. The chosen colours are carefully combined on the live site to ensure accessibility and readability.
 
-### User flow and ERD
-  - [Link to Miro](https://miro.com/app/board/uXjVLuC7tmQ=/?share_link_id=877125417995)
+**Insert image** 
+<details><summary>View</summary>
 
-### User stories and Project board
-  - [Terra Java project board](https://github.com/users/alexaspinalldev/projects/10)
+![Message Board colour palette](assets/images)
+</details>
+
+
+
+
 
 ### Wireframes:
 <img src="static/images/README/Landing.png" style="width: 32%"></img>
