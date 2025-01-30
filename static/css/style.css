@@ -116,4 +116,6 @@ body {
 
 .button-text {
     font-family: var(--body-font);
+    text-transform: capitalize;
+    font-weight: 500;
 }
