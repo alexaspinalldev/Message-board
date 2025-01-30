@@ -81,6 +81,8 @@ All imagery for Message Board is from Canva, including the logo design and custo
 **Insert image** 
 
 ## ERD
+
+**Insert image** 
     
 ## Key Features
 - **Filter by your listings:** Logged in Vendors can filter the list view to show only their listings. If they do not have any approved listings to show, Django will return a message to them confiming that this is not an error, rather than leaving simply a blank page.
@@ -95,35 +97,19 @@ All imagery for Message Board is from Canva, including the logo design and custo
   3. Deploy from main in Heroku dashboard
 - **Verification and Validation:**
   - All CRUD operations were retested manually in the deployed version. Often this was faster for making DB changes than spooling up the local server.
-
 - **Security Measures:**
   - Use of environment variables for sensitive data.
   - Ensured DEBUG mode is disabled in production.
 
+ <a href="..." target="_blank">View the deployed site here.</a>
+
 ## AI Implementation and Orchestration
 ### Use Cases and Reflections:
-  - **Site Ideation:**
-    - The name of the site was picked from a list of keywords provided by ChatGPT. DALLE was used to create the logo.
-    - AI was also used to expand the user stories from the initial prompt describing the site's functions.
-    - Whilst my initial ERD was hand drawn in the planning stage, the final one linked above was generated using https://www.eraser.io/diagramgpt from my final model set. 
-       
-  - **Content:** 
-    - Once the ERD was complete, GPT was used to create a JSON import scripts for the lists of Vendors and Coffees. Later I also had it create Python shell scripts to add field data such as vendor.about to the existng database.
-
-  - **Code Creation:** 
-    - GPT was used to cross-examine my proposed ERD, suggesting new fields, and then create the model objects. I also used it to suggest improvements to my client javascript, such as in the "loading modal" where I had it add a condition for users ctrl+clicking on the triggering links.
-
-  - **Debugging:** 
-    - GPT was utilised lightly to fix initial issues with my views, and also to troubleshoot issues with my DTL variables and static files not being found.
-
-  - **Performance and UX Optimization:** 
-    - AI was not used for this purpose.
-
-  - **Automated Unit Testing:**
-    - AI was used to troubleshoot issued with testscripts, and provided me the workaround of using python shell commands to the same effect.
+  - **...:**
+    - ...
 
 - **Overall Impact:**
-  - AI is an excellent tool for both generating codeblocks to save time, particularly markup, and also template content for the site's example database items. It is also extremely valuable for getting precise answers to nuanced troubleshooting situations.
+  - ...
 
 ## Testing Summary
 - **Manual Testing:**
