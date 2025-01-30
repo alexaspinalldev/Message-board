@@ -21,7 +21,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: var(--off-white)
+    background: #f8f9fa;
     margin: 0;
 }
 
