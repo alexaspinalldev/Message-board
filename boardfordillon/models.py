@@ -35,7 +35,7 @@ reactions = [
 
 class Reaction(models.Model):
     id = models.AutoField(primary_key=True)
-    reaction = models.Choices(names=reactions)
+    reaction = models.CharField(max_length=10, choices=reactions)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
 
