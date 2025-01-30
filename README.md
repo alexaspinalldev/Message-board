@@ -74,12 +74,13 @@ All imagery for Message Board is from Canva, including the logo design and custo
 
 ### Wireframes
 
+**Insert image** 
 
+### Responsiveness
 
-### Wireframes:
-<img src="static/images/README/Landing.png" style="width: 32%"></img>
-<img src="static/images/README/Catalogue.png" style="width: 32%"></img>
-<img src="static/images/README/CoffeeDetail.png" style="width: 32%"></img>
+**Insert image** 
+
+## ERD
     
 ## Key Features
 - **Filter by your listings:** Logged in Vendors can filter the list view to show only their listings. If they do not have any approved listings to show, Django will return a message to them confiming that this is not an error, rather than leaving simply a blank page.
