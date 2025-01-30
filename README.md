@@ -84,10 +84,17 @@ All imagery for Message Board is from Canva, including the logo design and custo
 
 **Insert image** 
     
-## Key Features
-- **Filter by your listings:** Logged in Vendors can filter the list view to show only their listings. If they do not have any approved listings to show, Django will return a message to them confiming that this is not an error, rather than leaving simply a blank page.
-- **Coffee detail:** Clicking into a coffee listing displays summed information from both the "Coffee" and "Vendor" tables.
-- **Seamless UX:** Users can seamlessly register and add/edit/remove their listings without Admin login or involvement. At the moment all listings are approved by default but this is the only reason an admin would be required in day-to-day operations.
+## Features
+
+### Existing Features
+
+### Future Features
+- Add more explicit view to Vendors of their listings that are unapproved, rather than filtering those out for all users.
+- Add greater sidebar filtering options.
+- Add a more appropriate homepage than just launchng straight into the catalogue.
+- Add a webstore app to the site.
+- Add the ability to contact vendors.
+- Add the ability to leave reviews for the coffees.
 
 ## Deployment
 - **Platform:** Heroku
@@ -111,27 +118,19 @@ All imagery for Message Board is from Canva, including the logo design and custo
 - **Overall Impact:**
   - ...
 
-## Testing Summary
-- **Manual Testing:**
-  - **Devices and Browsers Tested:** Tested manually on desktop and mobile devices.
-  - **Features Tested:** Signing up, logging in and out, adding, editing and removing Coffee listing functions were tested manually on all devices. I noted that the js scripts targeting features only available to authenticated users would result in console errors for non-authenticated users, so wrapping them in if statements resolved this.
-  - **Results:** Mobile testing revealed a few bugs including stretched images and some specific restrictions on iOS around video autoplaying. This later issue was resolved by checking the Apple documentation on the subject and adding the correct attributes.
-- **Automated Testing:**
-  - Tools Used: Django's built-in testing framework
-  - Features Covered: CoffeeAdd, CoffeeUpdate and SignUp forms were tested using automated test cases. I had issues doing this using class-based test so I instead opted to test through the Python Shell. AI suggested this alternative approach. I could not get Automated view testing working unfortunately so had to rely on manual testing results.
-  - Adjustments Made: On my Coffee model, I had neglected to include the mandatory "max_length" attribute on my choice field. Resolving this allowed my form tests to pass.
-- **Validation:**
-All final validation and testing was performed on the deployed version of the site.
-  - **HTML:** All pages passed W3C Markup validation checks with minimal changes. 
-  - **LightHouse:** Lightouse testing was predictably harsh on the landing page due to the large video load. More efficiently serving this video will be a future enhancement. Other than that, all pages scroed 90+ on all Lighthouse metrics during both mobile and desktop emulations.
-  - **CSS:** All CSS passed validation with no changes. There extant errors with the scrolling animation in "catalogue.css" but this contradicts Google's own scroll-driven-animations.style tool.
-  - **JS:** All JS passed JSHint check with only a few missing semicolons to correct.
+## Testing
 
+...
 
-## Future Enhancements
-- Add more explicit view to Vendors of their listings that are unapproved, rather than filtering those out for all users.
-- Add greater sidebar filtering options.
-- Add a more appropriate homepage than just launchng straight into the catalogue.
-- Add a webstore app to the site.
-- Add the ability to contact vendors.
-- Add the ability to leave reviews for the coffees.
+## Credits
+### Code
+* ...
+
+### Content
+* ...
+
+### Media
+* ...
+
+## Acknowledgements
+A huge thank you to Dillon Mc Caffrey for inspiring this project and providing support and kindness throughout our entire time studying with Code Institute.
