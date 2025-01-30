@@ -24,11 +24,18 @@ class Comment(models.Model):
     def __str__(self):
         return self.content
     
-reactions = ['like', 'dislike', 'love', 'funny', 'wow', 'sad', 'angry']
+reactions = [
+    ('like', 'Like'),
+    ('love', 'Love'),
+    ('haha', 'Haha'),
+    ('wow', 'Wow'),
+    ('sad', 'Sad'),
+    ('angry', 'Angry')
+]
 
 class Reaction(models.Model):
     id = models.AutoField(primary_key=True)
-    reaction = models.Choices(reactions)
+    reaction = models.Choices(names=reactions)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
 
