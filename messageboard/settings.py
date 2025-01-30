@@ -31,6 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1',
                  '.herokuapp.com',
+                 'https://codeinstitute-ide.net/start/#alexaspinal-messageboar-ssl2ogvxfxd',
 ]
 
 
