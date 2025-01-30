@@ -1,7 +1,6 @@
 # Message Board
 
-**Insert image**
-![Message Board header](assets/images)
+![Message Board header](readme/images/message-board-header.png)
 
 ## Introduction
 Message Board is a full-stack web application that allows users to post messages for others to see. Whether it’s a note of appreciation, a public announcement, or a simple thought to share, the site provides a clean and easy way to express yourself. Leveraging Django, Message Board seamlessly manages user authentication and message posting, all within a welcoming user experience.
@@ -10,14 +9,14 @@ Message Board is the result of a 3-day hackathon by a team of developers:
 
 * Alex Aspinall
 * Jess Howkins
-* Jude Wools
+* Jude Woolls
 * Kate Elliott
 
 This project is open source and can be forked for customisation.  
 
 A special edition of Message Board—**Thank You, Dillon!**—was built for us, and fellow students, to express our appreciation for Code Institute Facilitator Dillon Mc Caffrey. Deployed, documented, and delivered with gratitude.
 
-<a href="..." target="_blank">View the deployed site here.</a>
+<a href="https://messageboard1-f1454f42f245.herokuapp.com/" target="_blank">View the deployed site here.</a>
 
 ## Agile
 
@@ -45,8 +44,7 @@ The <a href="" target="_blank">project board</a> shows the complete user stories
 
 ## Branding
 
-**Insert image**
-![Message Board branding](assets/images)
+![Message Board branding](readme/images/message-board-branding.png)
 
 ### Fonts
 
@@ -56,20 +54,18 @@ Message Board uses 'Luckiest Guy' as a bold, mostly uppercase heading font and '
 
 Message Board features a bold and vibrant colour palette, designed to create a welcoming and engaging experience. The chosen colours are carefully combined on the live site to ensure accessibility and readability.
 
-**Insert image** 
 <details><summary>View</summary>
 
-![Message Board colour palette](assets/images)
+![Message Board colour palette](readme/images/message-board-colour-palette.png)
 </details>
 
 ### Imagery
 
 All imagery for Message Board is from Canva, including the logo design and customisable graphics.
 
-**Insert image** 
 <details><summary>View</summary>
 
-![Message Board imagery](assets/images)
+![Message Board imagery](readme/images/message-board-imagery.png)
 </details>
 
 ### Wireframes
@@ -112,7 +108,7 @@ All imagery for Message Board is from Canva, including the logo design and custo
   - Use of environment variables for sensitive data.
   - Ensured DEBUG mode is disabled in production.
 
- <a href="..." target="_blank">View the deployed site here.</a>
+ <a href="https://messageboard1-f1454f42f245.herokuapp.com/" target="_blank">View the deployed site here.</a>
 
 ## AI Implementation and Orchestration
 ### Use Cases and Reflections:

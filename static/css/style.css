@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Shadows+Into+Light+Two&display=swap');
+
+/* ROOT STYLES */
+:root {
+    --heading-font: "Luckiest Guy", sans-serif;
+    --body-font: "Shadows Into Light Two", sans-serif;
+    --dark-blue: #133795;
+    --light-blue: #7BB7E0;
+    --off-white: #FFFCF9;
+    --green: #169D53;
+    --yellow: #FBD301;
+    --orange: #ED5F1E;
+    --purple: #881CA6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--body-font);
+}
+
+/* Landing page */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--off-white);
+    margin: 0;
+}
+
+/* Logo Animation */
+
+@keyframes spiral-bounce {
+    0% {
+        transform: translateY(-100%) translateX(-100%) scale(0) rotate(-360deg);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10px) translateX(10px) scale(1.2) rotate(0deg);
+        opacity: 1;
+    }
+    70% {
+        transform: translateY(-20px);
+    }
+    85% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.landing-logo {
+    max-width: 100%;
+    height: auto;
+    animation: spiral-bounce 1s ease-in-out;
+    display: block;
+    object-fit: contain;
+}
+
+.logo-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1.5rem;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Envelope Button */
+.button-container {
+    margin-top: 20px;
+    position: relative;
+}
+
+.envelope-button {
+    display: block;
+    width: 120px; /* Increased for better view */
+    height: 70px; /* Increased for better view */
+    position: relative;
+    background: var(--yellow);
+    border-radius: 5px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+/* Envelope Flap */
+.top-flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px; /* Increase the height for a more noticeable triangle */
+    background: #eecb31;
+    clip-path: polygon(0 0, 100% 0, 50% 100%); /* Upside-down triangle */
+}
+
+.envelope-body {
+    position: absolute;
+    top: 40px; /* Move the body down to accommodate the flap */
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: var(--yellow);
+}
+
+.button-text {
+    font-family: var(--body-font);
+    text-transform: capitalize;
+    font-weight: 500;
+}
