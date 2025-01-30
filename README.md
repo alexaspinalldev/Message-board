@@ -79,22 +79,26 @@ All imagery for Message Board is from Canva, including the logo design and custo
 ### Responsiveness
 
 **Insert image** 
+<details><summary>View</summary>
+
+![Message Board responsiveness](assets/images)
+</details>
 
 ## ERD
 
 **Insert image** 
+<details><summary>View</summary>
+
+![Message Board ERD](assets/images)
+</details>
     
 ## Features
 
 ### Existing Features
 
 ### Future Features
-- Add more explicit view to Vendors of their listings that are unapproved, rather than filtering those out for all users.
-- Add greater sidebar filtering options.
-- Add a more appropriate homepage than just launchng straight into the catalogue.
-- Add a webstore app to the site.
-- Add the ability to contact vendors.
-- Add the ability to leave reviews for the coffees.
+
+* ...
 
 ## Deployment
 - **Platform:** Heroku
@@ -130,7 +134,7 @@ All imagery for Message Board is from Canva, including the logo design and custo
 * ...
 
 ### Media
-* ...
+* Canva
 
 ## Acknowledgements
 A huge thank you to Dillon Mc Caffrey for inspiring this project and providing support and kindness throughout our entire time studying with Code Institute.
