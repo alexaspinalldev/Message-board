@@ -1,12 +1,16 @@
-# Terra Java
+# Message Board
 
-## Overview
-Terra Java is a boutique catalogue of all the world's finest coffee blends. Taking its name from the rich coffee fields found on the island of Java in western Indonesia, it aims to showcase the very best coffees from around the globe.
+## Introduction
+Message Board is a full-stack web application that allows users to post messages for others to see. Whether it’s a note of appreciation, a public announcement, or a simple thought to share, the site provides a clean and easy way to express yourself. Leveraging Django, Message Board seamlessly manages user authentication and message posting, all within a welcoming user experience.
 
-Vendors are able to register themselves on the site and upload, edit and delete their coffees.
-Visitors can browse the listed coffees and get details on specific blends and vendors.
+Message Board is the result of a 3-day hackathon by a team of developers:
 
-This site was built as my Full Stack Capstone Project with Code Institute. It uses the Django framework.
+* Alex Aspinall
+* Jess Howkins
+* Jude Wools
+* Kate Elliott
+
+This project is open source and can be forked for customisation
 
 [Link to deployed site](https://terra-java-9165cf0b75d7.herokuapp.com/)
 [Link to repository](https://github.com/alexaspinalldev/Terra-Java/)
