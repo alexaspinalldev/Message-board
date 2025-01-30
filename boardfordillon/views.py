@@ -6,3 +6,4 @@ from .models import Post, Comment, Reaction
 class MessageList(generic.ListView):
     model = Post
     template_name = "home.html"
+

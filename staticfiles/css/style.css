@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Shadows+Into+Light+Two&display=swap');
+
+/* ROOT STYLES */
+:root {
+    --heading-font: "Luckiest Guy", sans-serif;
+    --body-font: "Shadows Into Light Two", sans-serif;
+    --dark-blue: #133795;
+    --light-blue: #7BB7E0;
+    --off-white: #FFFCF9;
+    --green: #169D53;
+    --yellow: #FBD301;
+    --orange: #ED5F1E;
+    --purple: #881CA6;
+}
+
+/* Landing page */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f8f9fa;
+    margin: 0;
+}
+
+/* Logo Animation */
+.logo-container {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Envelope Button */
+.button-container {
+    margin-top: 20px;
+    position: relative;
+}
+
+.envelope-button {
+    display: block;
+    width: 100px;
+    height: 60px;
+    position: relative;
+    background: #f4b400;
+    border-radius: 5px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+/* Envelope Flap */
+.top-flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: #f1a900;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.body {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #f4b400;
+}
+
+.bottom-flap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: #f1a900;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+/* Hover Effect */
+.envelope-button:hover .top-flap {
+    transform: translateY(-15px);
+}
