@@ -1,4 +1,5 @@
 {% load static %}
+{% url 'Home' as home_url %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,10 +21,10 @@
     </div>
 
     <div class="button-container">
-        <a href="#" class="envelope-button">
+        <a href="{% url 'Home' %}" class="envelope-button">
             <div class="top-flap"></div>
             <div class="envelope-body">
-                <span class="button-text">Enter here</span>
+                <a href="{% url 'Home' %}" class="button-text">Enter here</a>
             </div>
         </a>
     </div>
