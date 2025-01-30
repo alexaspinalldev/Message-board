@@ -21,19 +21,40 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: var(--off-white)
+    background: var(--off-white);
     margin: 0;
 }
 
 /* Logo Animation */
-.logo-container {
-    animation: fadeIn 2s ease-in-out;
+
+@keyframes spiral-bounce {
+    0% {
+        transform: translateY(-100%) translateX(-100%) scale(0) rotate(-360deg);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10px) translateX(10px) scale(1.2) rotate(0deg);
+        opacity: 1;
+    }
+    70% {
+        transform: translateY(-20px);
+    }
+    85% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
-.logo {
-    width: 200px;
+.landing-logo {
+    width: 100%;
     height: auto;
+    animation: spiral-bounce 1s ease-in-out;
+    margin: 2rem;
+    box-sizing: border-box; /* Ensure margins are included in the width/height */
 }
+
 
 /* Envelope Button */
 .button-container {
