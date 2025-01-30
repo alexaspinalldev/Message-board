@@ -18,7 +18,30 @@ A special edition of Message Board—**Thank You, Dillon!**—was built for us, 
 
 <a href="..." target="_blank">View the deployed site here.</a>
 
-## UX Design Process
+## Agile
+
+To ensure we delivered a minimum viable product (MVP) in the hackathon's allotted time frame, as a team we used MoSCoW prioritisation. Doing so allowed us to determine the MVP from the offset and work effectively to reach this first. The <a href="" target="_blank">project board</a> shows the complete user stories along with their acceptance criteria. The user stories are also laid out below within UX Design.
+
+## UX Design
+### User Stories
+
+The <a href="" target="_blank">project board</a> shows the complete user stories along with their acceptance criteria.
+
+<details><summary>Must Have</summary>
+
+* As a ...
+</details>
+
+<details><summary>Should Have</summary>
+
+* As a ...
+</details>
+
+<details><summary>Could Have</summary>
+
+* As a ...
+</details>
+
 ### Graphic design and visual assets:
 - [Selected colour palette](https://coolors.co/4f3221-34623f-ffee7d-c1b098-ffffff)
 
