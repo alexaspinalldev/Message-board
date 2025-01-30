@@ -32,6 +32,12 @@ DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1',
                  '.herokuapp.com',
                  'localhost',
+                 '8000-alexaspinal-messageboar-ssl2ogvxfxd.ws.codeinstitute-ide.net',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-alexaspinal-messageboar-ssl2ogvxfxd.ws.codeinstitute-ide.net',
+    'https://*.herokuapp.com',
 ]
 
 
