@@ -16,7 +16,7 @@ This project is open source and can be forked for customisation.
 
 A special edition of Message Board—**Thank You, Dillon!**—was built for us, and fellow students, to express our appreciation for Code Institute Facilitator Dillon Mc Caffrey. Deployed, documented, and delivered with gratitude.
 
-<a href="..." target="_blank">View the deployed site here.</a>
+<a href="https://messageboard1-f1454f42f245.herokuapp.com/" target="_blank">View the deployed site here.</a>
 
 ## Agile
 
@@ -108,7 +108,7 @@ All imagery for Message Board is from Canva, including the logo design and custo
   - Use of environment variables for sensitive data.
   - Ensured DEBUG mode is disabled in production.
 
- <a href="..." target="_blank">View the deployed site here.</a>
+ <a href="https://messageboard1-f1454f42f245.herokuapp.com/" target="_blank">View the deployed site here.</a>
 
 ## AI Implementation and Orchestration
 ### Use Cases and Reflections:
