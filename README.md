@@ -9,7 +9,7 @@ Message Board is the result of a 3-day hackathon by a team of developers:
 
 * Alex Aspinall
 * Jess Howkins
-* Jude Wools
+* Jude Woolls
 * Kate Elliott
 
 This project is open source and can be forked for customisation.  
