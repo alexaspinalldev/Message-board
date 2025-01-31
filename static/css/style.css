@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Shadows+Into+Light+Two&display=swap');
 
 /* ROOT STYLES */
@@ -42,16 +41,20 @@ body {
         transform: translateY(-100%) translateX(-100%) scale(0) rotate(-360deg);
         opacity: 0;
     }
+
     50% {
         transform: translateY(10px) translateX(10px) scale(1.2) rotate(0deg);
         opacity: 1;
     }
+
     70% {
         transform: translateY(-20px);
     }
+
     85% {
         transform: translateY(10px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -85,8 +88,8 @@ body {
 
 .envelope-button {
     display: block;
-    width: 120px; /* Increased for better view */
-    height: 70px; /* Increased for better view */
+    width: 120px;
+    height: 70px;
     position: relative;
     background: var(--yellow);
     border-radius: 5px;
@@ -100,14 +103,14 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 40px; /* Increase the height for a more noticeable triangle */
+    height: 40px;
     background: #eecb31;
-    clip-path: polygon(0 0, 100% 0, 50% 100%); /* Upside-down triangle */
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
 }
 
 .envelope-body {
     position: absolute;
-    top: 40px; /* Move the body down to accommodate the flap */
+    top: 40px;
     left: 0;
     width: 100%;
     height: 50px;
