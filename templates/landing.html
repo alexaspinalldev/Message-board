@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,20 +14,24 @@
     <!--CSS-->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
-<body>
 
+<body>
     <div class="logo-container">
         <img src="{% static 'images/message-board-logo.webp' %}" alt="Message Board Logo" class="landing-logo">
     </div>
 
-    <div class="button-container">
+    <button class="button-envelope">
+        <img src="{% static 'images/enter-site-button.webp' %}" alt="Click me">
+    </button>
+    
+    <!--<div class="button-container">
         <a href="#" class="envelope-button">
             <div class="top-flap"></div>
             <div class="envelope-body">
-                <span class="button-text">Enter here</span>
+                <span class="button-text">Enter site</span>
             </div>
         </a>
-    </div>
+    </div>-->
 
 </body>
 </html>
