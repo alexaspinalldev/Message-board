@@ -13,6 +13,9 @@
       "**/CVS": true
    },
    "files.autoSave": "off",
+<<<<<<< HEAD
    "workbench.colorTheme": "Visual Studio Dark",
+=======
+>>>>>>> e1864cb315029fd25ed2c64a0af02cd13139b242
    "terminal.integrated.gpuAcceleration": "canvas",
 }
