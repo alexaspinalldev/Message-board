@@ -53,17 +53,16 @@
     </header>
 
     <main>
-        <section>
-            <div>
+            <div id="post-container">
                 {% for post in object_list %}
-                <div class="post-cloud">
+                <div class="post-cloud" javascript: onload();">
                     <h2>{{post.title}}</h2>
                     <p>{{post.content | linebreaks}}</p>
                 </div>
 
                 {% endfor %}
                 <!-- Form to submit own thank u's -->
-
+            </div>
                 <div id="post-form-container">
                     <h2>Submit your own 'Thank You' Message here: </h2>
                     <form method="post" action="{% url 'post_form' %}">
@@ -73,7 +72,6 @@
                     </form>
                 </div>
             </div>
-        </section>
     </main>
 
     <!-- Footer -->
@@ -103,6 +101,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <!-- Position the clouds on the page -->
+    <script>
+        window.onload = function() {
+            document.querySelectorAll('.post-cloud').forEach(div => {
+                div.style.top = Math.random() * (window.innerHeight - div.offsetHeight) + 'px';
+                div.style.left = Math.random() * (window.innerWidth - div.offsetWidth) + 'px';
+            });
+        };
+    </script>
 
 </body>
 

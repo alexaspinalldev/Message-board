@@ -21,10 +21,12 @@ h3 {
 
 p {
     font-family: var(--body-font);
+    letter-spacing: 0.15rem;
+    font-weight: 500;
 }
 
 /* Landing page */
-body {
+.landing-body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,50 +81,6 @@ body {
     align-items: center;
 }
 
-
-/*
-.button-container {
-    margin-top: 20px;
-    position: relative;
-}
-
-.envelope-button {
-    display: block;
-    width: 120px;
-    height: 70px;
-    position: relative;
-    background: var(--yellow);
-    border-radius: 5px;
-    text-decoration: none;
-    overflow: hidden;
-}
-
-
-.top-flap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background: #ffbe33;
-    clip-path: polygon(0 0, 100% 0, 50% 100%);
-}
-
-.envelope-body {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background: var(--yellow);
-}
-
-.button-text {
-    font-family: var(--body-font);
-    text-transform: capitalize;
-    font-weight: 500;
-} */
-
 .button-envelope {
     background-color: var(--off-white);
     border: none;
@@ -133,10 +91,136 @@ body {
     cursor: pointer;
 }
 
+/* Homepage*/
+
+.navbar-toggler {
+    border: none;
+}
+
+#base-nav {
+    background-color: var(--light-blue);
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.navbar .nav-link {
+    color: var(--dark-blue);
+    font-family: var(--body-font);
+    letter-spacing: 0.15rem;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: var(--yellow);
+}
+
+.navbar .nav-link .active {
+    font-weight: 480;
+}
+
+/*masthead*/
+
+.header-container {
+    padding: 0 1.5rem;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you-logo {
+    max-width: 600px;
+    width: 90%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    margin-bottom: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#post-container {
+    position: relative;
+    border: 1px solid red;
+    height: 100%;
+    width: 100%;
+}
 
 .post-cloud {
+    position: absolute;
     width: 20vw;
     height: min-content;
     background-color: #7BB7E0;
     border-radius: 50px;
+    transition: transform 0.5s;
+}
+
+.post-cloud:hover {
+    z-index: 1000;
+    transform: scale(1.1);
+}
+
+/* footer */
+
+footer {
+    background-color: var(--dark-blue);
+    margin-top: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    /* Media query for social media icons at the end of sheet */
+}
+
+footer a {
+    color: var(--off-white);
+    font-family: var(--body-font);
+    font-size: 1rem;
+    text-decoration: none;
+    letter-spacing: 0.15rem;
+    font-weight: 550;
+}
+
+footer a:hover {
+    cursor: pointer;
+    color: var(--yellow);
+}
+
+.fab {
+    font-size: 1.5rem;
+    color: var(--yellow);
+    padding: 0.2rem;
+}
+
+#footer-nourish {
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    color: var(--off-white);
+    font-weight: 180;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+}
+
+/* Media Queries */
+@media (min-width: 620px) {
+    .footer-control {
+        gap: 1.5rem;
+    }
+}
+
+
+@media (max-width: 620px) {
+    .footer-control {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
 }
