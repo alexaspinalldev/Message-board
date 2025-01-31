@@ -139,12 +139,30 @@ p {
     margin-bottom: 2rem;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#post-container {
+    position: relative;
+    border: 1px solid red;
+    height: 100%;
+    width: 100%;
+}
 
 .post-cloud {
+    position: absolute;
     width: 20vw;
     height: min-content;
     background-color: #7BB7E0;
     border-radius: 50px;
+    transition: transform 0.5s;
+}
+
+.post-cloud:hover {
+    z-index: 1000;
+    transform: scale(1.1);
 }
 
 /* footer */
