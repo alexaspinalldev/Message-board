@@ -51,27 +51,49 @@
 
     </header>
 
-    <section>
-        <div>
-            {% for post in object_list %}
-            <div class="post-cloud">
-                <h2>{{post.title}}</h2>
-                <p>{{post.content | linebreaks}}</p>
-            </div>
+    <main>
+        <section>
+            <div>
+                {% for post in object_list %}
+                <div class="post-cloud">
+                    <h2>{{post.title}}</h2>
+                    <p>{{post.content | linebreaks}}</p>
+                </div>
 
-            {% endfor %}
-            <!-- Form to submit own thank u's -->
+                {% endfor %}
+                <!-- Form to submit own thank u's -->
 
-            <div id="post-form-container">
-                <h2>Submit your own 'Thank You' Message here: </h2>
-                <form method="post" action="{% url 'post_form' %}">
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <button type="submit">Submit</button>
-                </form>
+                <div id="post-form-container">
+                    <h2>Submit your own 'Thank You' Message here: </h2>
+                    <form method="post" action="{% url 'post_form' %}">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
+
+        <!-- Footer -->
+        <footer class="mt-auto text-center">
+            <div class="container">
+                <div class="d-flex justify-content-center footer-control">
+                    <a href="https://github.com/alexaspinalldev" target="_blank" aria-label="GitHub profile of Developer 1">
+                        <i class="fab fa-github"></i> alexaspinalldev
+                    </a>
+                    <a href="https://github.com/jesskins" target="_blank" aria-label="GitHub profile of Developer 2">
+                        <i class="fab fa-github"></i> jesskins
+                    </a>
+                    <a href="https://github.com/judewoolls" target="_blank" aria-label="GitHub profile of Developer 3">
+                        <i class="fab fa-github"></i> judewoolls
+                    </a>
+                    <a href="https://github.com/katee145" target="_blank" aria-label="GitHub profile of Developer 4">
+                        <i class="fab fa-github"></i> katee145
+                    </a>
+                </div>
+            </div>
+        </footer>
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/644406e4c7.js" crossorigin="anonymous"></script>
