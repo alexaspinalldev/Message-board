@@ -1,5 +1,5 @@
 {% load static %}
-{% url 'Home' as home_url %}
+{% url 'home' as home_url %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +21,7 @@
         <img src="{% static 'images/message-board-logo.webp' %}" alt="Message Board Logo" class="landing-logo">
     </div>
 
-    <a href="{% url 'Home' %}" class="button-envelope">
+    <a href="{% url 'home' %}" class="button-envelope">
         <img src="{% static 'images/enter-site-button.webp' %}" alt="Click me">
     </a>
     
