@@ -3,14 +3,24 @@ This is the home page template<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Board</title>
+    <title>Message Board - Home</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="/static/images/message-board-favicon.webp">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 
 <body>
-<!-- Thank u's to go here -->
+{% for post in object_list %}
+<div class="post-cloud">
+    <h2>{{post.title}}</h2>
+    <p>{{post.content | linebreaks}}</p>
+</div>
 
-
+{% endfor %}
 <!-- Form to submit own thank u's -->
 
 <div id="post-form-container">
