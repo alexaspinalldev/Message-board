@@ -79,50 +79,6 @@ body {
     align-items: center;
 }
 
-
-/*
-.button-container {
-    margin-top: 20px;
-    position: relative;
-}
-
-.envelope-button {
-    display: block;
-    width: 120px;
-    height: 70px;
-    position: relative;
-    background: var(--yellow);
-    border-radius: 5px;
-    text-decoration: none;
-    overflow: hidden;
-}
-
-
-.top-flap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background: #ffbe33;
-    clip-path: polygon(0 0, 100% 0, 50% 100%);
-}
-
-.envelope-body {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background: var(--yellow);
-}
-
-.button-text {
-    font-family: var(--body-font);
-    text-transform: capitalize;
-    font-weight: 500;
-} */
-
 .button-envelope {
     background-color: var(--off-white);
     border: none;
@@ -131,6 +87,34 @@ body {
 .button-envelope:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+/* Homepage*/
+
+.navbar-toggler {
+    border: none;
+}
+
+#base-nav {
+    background-color: var(--light-blue);
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.navbar .nav-link {
+    color: var(--dark-blue);
+    font-family: var(--body-font);
+    letter-spacing: 0.15rem;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: var(--yellow);
+}
+
+.navbar .nav-link .active {
+    font-weight: 480;
 }
 
 
