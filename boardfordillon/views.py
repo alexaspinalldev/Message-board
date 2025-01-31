@@ -1,6 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import generic
+from .models import Post, Comment, Reaction
 
 # Create your views here.
-def landing(request):
-    return render(request, 'landing.html')  
+class MessageList(generic.ListView):
+    model = Post
+    template_name = "home.html"
+

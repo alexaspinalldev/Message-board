@@ -1,6 +1,6 @@
+from . import views
 from django.urls import path
-from .views import landing 
 
 urlpatterns = [
-    path('', landing, name='landing'),  # Make landing.html the homepage
+    path('home/', views.MessageList.as_view(), name='Home'),
 ]
