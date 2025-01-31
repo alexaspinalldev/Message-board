@@ -10,3 +10,4 @@ cloudinary_python.txt
 README.md
 .DS_Store
 .vscode
+.env
