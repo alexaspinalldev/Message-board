@@ -21,11 +21,11 @@ def post_form(request):
     else:
         form = PostForm()
     return render(
-        request, 'home.html', {'form': form, 'object_list': Post.objects.all().order_by(
-            '-date_posted')})
+        request, 'home.html', {
+            'form': form, 'object_list': Post.objects.all().order_by('-date_posted')})
 
 
-# views for the editing and deleting post 
+# views for the editing and deleting post
 
 def edit_post(request, post_id):
     post = get_object_or_404(Post, id=post_id)
@@ -38,6 +38,7 @@ def edit_post(request, post_id):
         form = PostForm(instance=post)
     return render(request, 'home.html', {'form': form, 'object_list': Post.objects.all().order_by(
             '-date_posted')})
+
 
 def delete_post(request, post_id):
     post = get_object_or_404(Post, id=post_id)
