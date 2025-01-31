@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views import generic
 from .models import Post, Comment, Reaction
-# from .forms import PostForm
+from .forms import PostForm
 
 
 # Create your views here.
@@ -10,7 +10,6 @@ class MessageList(generic.ListView):
     template_name = "home.html"
 
 
-# @login_required
 def post_form(request):
     if request.method == 'POST':
         form = PostForm(request.POST)
