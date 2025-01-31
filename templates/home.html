@@ -45,6 +45,22 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="#" aria-label="Go to home page" href="#">Home</a>
                     </li>
+                    <!-- Nav bar shows different options depending on login status -->
+                    {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"
+                            href="{% url 'account_logout' %}" aria-label="Go to logout page">Logout</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == signup_url %}active" aria-current="page{% endif %}"
+                            href="{% url 'account_signup' %}" aria-label="Go to registration page">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == login_url %}active" aria-current="page{% endif %}"
+                            href="{% url 'account_login' %}" aria-label="Go to login page">Login</a>
+                    </li>
+                    {% endif %}
 
                 </ul>
             </div>
