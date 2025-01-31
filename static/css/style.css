@@ -166,6 +166,41 @@ main {
     transform: scale(1.1);
 }
 
+/* edit modal to allow enoough space */
+
+/* edit modal to allow enoough space */
+
+/* Custom modal styles */
+.modal-dialog {
+    max-width: 80%; /* Adjust width as needed */
+    margin: 1.75rem auto;
+}
+
+.modal-content {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #7BB7E0; /* Same background color as post clouds */
+}
+
+/* Custom modal header and body styles */
+.modal-header, .modal-body {
+    border-bottom: none; /* Remove border between header and body */
+}
+
+.modal-header {
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-footer {
+    border-radius: 0 0 15px 15px;
+}
+
+/* Style buttons in modals */
+.modal .btn {
+    margin: 0.5rem;
+}
+
+
 /* footer */
 
 footer {
