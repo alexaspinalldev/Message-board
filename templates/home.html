@@ -1,1 +1,27 @@
-This is the home page template
+This is the home page template<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Board</title>
+</head>
+
+
+<body>
+<!-- Thank u's to go here -->
+
+
+<!-- Form to submit own thank u's -->
+
+<div id="post-form-container">
+    <h2>Submit your own 'Thank You' Message here: </h2>
+    <form method="post" action="{% url 'post_form' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+
+</body>
+</html>
