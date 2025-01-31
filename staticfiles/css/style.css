@@ -132,3 +132,11 @@ body {
     transform: scale(1.1);
     cursor: pointer;
 }
+
+
+.post-cloud {
+    width: 20vw;
+    height: min-content;
+    background-color: #7BB7E0;
+    border-radius: 50px;
+}
