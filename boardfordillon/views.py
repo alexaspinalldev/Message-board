@@ -10,7 +10,6 @@ class MessageList(generic.ListView):
     template_name = "home.html"
 
 
-# @login_required
 def post_form(request):
     if request.method == 'POST':
         form = PostForm(request.POST)
