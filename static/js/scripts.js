@@ -1,16 +1,16 @@
+// Function to open modal
+function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "block";
+}
+
+// Function to close modal
+function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = "none";
+}
+
 document.addEventListener("DOMContentLoaded", function() {
-    // Function to open modal
-    function openModal(modalId) {
-        var modal = document.getElementById(modalId);
-        modal.style.display = "block";
-    }
-
-    // Function to close modal
-    function closeModal(modalId) {
-        var modal = document.getElementById(modalId);
-        modal.style.display = "none";
-    }
-
     // Attach event listeners to open and close modal buttons
     document.querySelectorAll("[data-open-modal]").forEach(button => {
         button.addEventListener("click", function() {
