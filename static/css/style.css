@@ -21,6 +21,8 @@ h3 {
 
 p {
     font-family: var(--body-font);
+    letter-spacing: 0.15rem;
+    font-weight: 500;
 }
 
 /* Landing page */
@@ -134,6 +136,7 @@ p {
     height: auto;
     display: block;
     object-fit: contain;
+    margin-bottom: 2rem;
 }
 
 
