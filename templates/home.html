@@ -96,7 +96,7 @@
                             <form method="post" action="{% url 'edit_post' post.id %}">
                                 {% csrf_token %}
                                 {{ form.as_p }}
-                                <button type="submit">Save</button>
+                                <button type="submit" class="btn btn-primary">Save</button>
                             </form>
                         </div>
                     </div>
@@ -110,8 +110,8 @@
                             <p>{{ post.content }}</p>
                             <form method="post" action="{% url 'delete_post' post.id %}">
                                 {% csrf_token %}
-                                <button type="submit">Yes, delete</button>
-                                <button type="button" onclick="closeModal('deleteModal{{ post.id }}')">Cancel</button>
+                                <button type="submit" class="btn btn-danger">Yes, delete</button>
+                                <button type="button" class="btn btn-secondary">Cancel</button>
                             </form>
                         </div>
                     </div>
