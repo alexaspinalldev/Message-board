@@ -8,9 +8,13 @@ This is the home page template<!DOCTYPE html>
 
 
 <body>
-<!-- Thank u's to go here -->
+{% for post in object_list %}
+<div class="post-cloud">
+    <h2>{{post.title}}</h2>
+    <p>{{post.content | linebreaks}}</p>
+</div>
 
-
+{% endfor %}
 <!-- Form to submit own thank u's -->
 
 <div id="post-form-container">
