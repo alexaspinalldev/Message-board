@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['127.0.0.1',
                  '.herokuapp.com',
                  'localhost',
                  '8000-alexaspinal-messageboar-ssl2ogvxfxd.ws.codeinstitute-ide.net',
+                 '192.168.0.174'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
