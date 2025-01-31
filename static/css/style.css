@@ -188,3 +188,18 @@ footer a:hover {
     letter-spacing: 0.5px;
     margin-bottom: 0;
 }
+
+/* Media Queries */
+@media (min-width: 620px) {
+    .footer-control {
+        gap: 1.5rem;
+    }
+}
+
+
+@media (max-width: 620px) {
+    .footer-control {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
