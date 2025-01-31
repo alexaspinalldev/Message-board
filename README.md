@@ -29,17 +29,26 @@ The <a href="" target="_blank">project board</a> shows the complete user stories
 
 <details><summary>Must Have</summary>
 
-* As a ...
+* As a user, I can submit a thank-you message so that I can express my appreciation for the facilitator
+* As a user, I can see all thank-you messages displayed on the board so that I can read what others have written.
+* As a user, I can use a form with validation so that I don't submit an empty or invalid message.
+* As an admin, I can remove inappropriate messages so that the board stays respectful and relevant.
+* As a user, I can see a visually appealing message board so that it feels engaging and pleasant to use.
+* As a user, I can access the message board on different devices so that I can participate from a phone, tablet, or computer.
 </details>
 
 <details><summary>Should Have</summary>
 
-* As a ...
+* As a user, I can edit or delete my own messages so that I can correct mistakes or remove unwanted posts.
+* As a user, I can see timestamps on messages so that I know when each message was posted.
 </details>
 
 <details><summary>Could Have</summary>
 
-* As a ...
+* As a user, I can filter or search for messages so that I can easily find specific posts.
+* As a user, I can react or 'like' messages so that popular messages get highlighted.
+* As a user I would like to be able to upload a picture or gif to express my gratitude.
+* As a User I would like the webpage to automatically update so I don't miss any new messages.
 </details>
 
 ## Branding
