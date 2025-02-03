@@ -394,20 +394,16 @@ footer a:hover {
 }
 
 /* Post cloud media queries*/
-@media (max-width: 1111px) {
+@media (min-width: 620px) {
     .post-cloud {
-        width: 50vw;
-    }
-}
-
-@media (max-width: 785px) {
-    .post-cloud {
+        position: absolute;
         width: 60vw;
+        margin-bottom: 0;
     }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 1024px) {
     .post-cloud {
-        width: 75vw;
+        width: 40vw;
     }
 }
