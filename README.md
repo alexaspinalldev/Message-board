@@ -90,11 +90,7 @@ The wireframes below show the planned output for Message Board on desktop. The e
 
 ### Responsiveness
 
-**Insert image** 
-<details><summary>View</summary>
-
-![Message Board responsiveness](assets/images)
-</details>
+Message Board is reponsive across screen sizes thanks to the use of media queries, Bootstrap, and the changing layout on mobile.
 
 ## ERD
 
@@ -166,6 +162,8 @@ Users can edit and/or delete their own message and the homepage will be updated.
 
 ## Testing
 
+Below is evidence of the external testing that was completed in the allotted time frame. The developer team also each manually tested the site.
+
 ### Lighthouse
 
 <details><summary>Landing</summary>
@@ -193,6 +191,17 @@ Users can edit and/or delete their own message and the homepage will be updated.
 <details><summary>Warnings</summary>
 
 ![Lighthouse testing](readme/images/css-warnings.png)
+</details>
+
+### JavaScript
+
+<details><summary>script.js</summary>
+
+![Lighthouse testing](readme/images/script.js.png)
+</details>
+<details><summary>cloudPlacement.js</summary>
+
+![Lighthouse testing](readme/images/cloudPlacement.js.png)
 </details>
 
 ## Credits

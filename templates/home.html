@@ -33,44 +33,49 @@
 
 <body class="d-flex flex-column min-vh-100">
 
-    <!-- Navigation -->
-    <nav id="base-nav" class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="#" aria-label="Go to home page"
-                            href="{% url 'home' %}">Home</a>
-                    </li>
-                    <!-- Nav bar shows different options depending on login status -->
-                    {% if user.is_authenticated %}
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'account_logout' %}" aria-label="Go to logout page">Logout</a>
-                    </li>
-                    {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == signup_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'account_signup' %}" aria-label="Go to registration page">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if request.path == login_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'account_login' %}" aria-label="Go to login page">Login</a>
-                    </li>
-                    {% endif %}
+<!-- Navigation -->
+<nav id="base-nav" class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="#" aria-label="Go to home page"
+                        href="{% url 'home' %}">Home</a>
+                </li>
+                <!-- Nav bar shows different options depending on login status -->
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"
+                        href="{% url 'account_logout' %}" aria-label="Go to logout page">Logout</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == signup_url %}active" aria-current="page{% endif %}"
+                        href="{% url 'account_signup' %}" aria-label="Go to registration page">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if request.path == login_url %}active" aria-current="page{% endif %}"
+                        href="{% url 'account_login' %}" aria-label="Go to login page">Login</a>
+                </li>
+                {% endif %}
+                <li class="nav-item">
+                    <a class="nav-link" aria-label="Submit your own message via this link to form"
+                        href="{% url 'post_form'}">Write your own</a>
+                </li>
 
-                </ul>
-            </div>
-            <!-- Logo in the center -->
-            <div class="navbar-brand mx-auto">
-                <img src="{% static 'images/thank-you-logo.webp' %}" alt="Thank you Logo" class="thank-you-logo">
-            </div>
+            </ul>
         </div>
-    </nav>
+        <!-- Logo in the center -->
+        <div class="navbar-brand mx-auto">
+            <img src="{% static 'images/thank-you-logo.webp' %}" alt="Thank you Logo" class="thank-you-logo">
+        </div>
+    </div>
+</nav>
+
 
     <main>
         <div id="post-container">
@@ -78,8 +83,9 @@
             <div class="post-cloud">
                 <h2 class="post-title">{{ post.title }}</h2>
                 <p>{{ post.author.username }}</p>
-                <p class="post-text">{{ post.content | linebreaks }}</p>
-                {% if post.author == user %}
+                <p class="post-text">{{post.content | linebreaks}}</p>
+                <p class="timestamp">Posted on: {{ post.date_posted }}</p>
+                {% if post.author == user %} <!--- only edit and delete own posts -->
                 <button data-open-modal="editModal{{ post.id }}">
                     <i class="fas fa-pencil-alt"></i>
                 </button>
@@ -131,11 +137,7 @@
 
                 </div>
                 {% endfor %}
-                <!-- Form to submit own thank u's -->
-            </div>
-                <div id="post-form-container">
-                    <h2>Submit your own 'Thank You' Message here: </h2>
-                    <a href="{% url 'post_form' %}" class="btn btn-primary">Submit</a>
+
             </div>
     </main>
 
@@ -170,6 +172,7 @@
     <!-- Position the clouds on the page -->
     <script src="{% static 'js/cloudPlacement.js' %}" defer>
     </script>
+<div id="backdrop"></div>
     <script src="{% static 'js/reaction.js' %}" defer></script>
 
 </body>
