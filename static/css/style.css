@@ -27,6 +27,7 @@ p {
 
 body {
     background-color: var(--off-white);
+    min-height: 100vh;
 }
 
 /* Landing page */
@@ -140,6 +141,10 @@ body {
     width: auto;
     height: 50px;
     object-fit: contain;
+}
+
+.right {
+    justify-self: right;
 }
 
 /*main*/
@@ -302,6 +307,7 @@ main {
     display: flex;
     gap: 20px;
     padding-top: 5px;
+    color: white;
 }
 
 #post-form-container a {
