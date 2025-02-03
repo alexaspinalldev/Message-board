@@ -250,7 +250,7 @@ main {
     margin: 0.5rem;
 }
 
-.post-form-container {
+#post-form-container {
     display: flex;
     gap: 20px;
 }
