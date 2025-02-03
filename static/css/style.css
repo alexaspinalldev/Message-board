@@ -156,6 +156,7 @@ main {
     flex-grow: 1;
     /* /* min-height: calc(100vh - 100px); */
     /* Commenting out to ensure the whole thing fits on one page :) */
+}
 
 .post-cloud {
     position: absolute;
@@ -252,8 +253,7 @@ main {
 .post-form-container {
     display: flex;
     gap: 20px;
-};
-
+}
 
 /* footer */
 
