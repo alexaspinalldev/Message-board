@@ -444,3 +444,72 @@ footer a:hover {
         width: 40vw;
     }
 }
+
+/* Like button styles */
+.like-style-1 {
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-1:hover {
+    color: var(--dark-blue);
+    background-color: var(--off-white);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-2 {
+    background-color: var(--purple);
+    color: var(--off-white);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-2:hover {
+    color: var(--purple);
+    background-color: var(--off-white);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-3 {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-3:hover {
+    color: var(--off-white);
+    background-color: var(--dark-blue);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-4 {
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-4:hover {
+    color: var(--yellow);
+    background-color: var(--dark-blue);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-5 {
+    background-color: var(--green);
+    color: var(--off-white);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-5:hover {
+    color: var(--green);
+    background-color: var(--off-white);
+    border: 1px solid var(--off-white);
+}
+/* Hover effects for like buttons */
+.like-style-1:hover,
+.like-style-2:hover,
+.like-style-3:hover,
+.like-style-4:hover,
+.like-style-5:hover {
+    cursor: pointer;
+}

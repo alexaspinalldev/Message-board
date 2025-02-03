@@ -103,6 +103,12 @@ Message Board is reponsive across screen sizes thanks to the use of media querie
 
 ### Existing Features
 
+- User Authentication: Users can sign up, log in, and log out.
+- User Profiles: Each user has a profile page displaying their posts and reactions.
+- Responsive Design: The application is fully responsive and works on various devices (desktop, tablet, mobile).
+- The delete button to delete a post you no longer want displayed
+- Like button to add a like reaction to the post
+
 #### Landing Page
 User first sees a welcoming landing page, acting similar to the front of a greeting card.
 <details><summary>View</summary>
