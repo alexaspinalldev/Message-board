@@ -2,6 +2,7 @@
 function openModal(modalId) {
     var modal = document.getElementById(modalId);
     modal.style.display = "block";
+    document.getElementById('backdrop').style.display = 'block';
     // modal.style.display = "flex"; these have less jankyness but look terrible somehow?? i think they need to be bigger/opaque background
     // modal.style.position = "fixed";
 }
@@ -10,6 +11,7 @@ function openModal(modalId) {
 function closeModal(modalId) {
     var modal = document.getElementById(modalId);
     modal.style.display = "none";
+    document.getElementById('backdrop').style.display = 'none';
 }
 
 document.addEventListener("DOMContentLoaded", function() {
