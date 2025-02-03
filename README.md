@@ -92,11 +92,16 @@ The wireframes below show the planned output for Message Board on desktop. The e
 
 Message Board is reponsive across screen sizes thanks to the use of media queries, Bootstrap, and the changing layout on mobile.
 
+<details><summary>View</summary>
+
+![Message Board ERD](readme/images/ERD-pic.png)
+</details>
+
 ## ERD
 
 <details><summary>View</summary>
 
-![Message Board ERD](readme/images/ERD-pic.png)
+![Message Board ERD](readme/images/responsiveness.png)
 </details>
     
 ## Features
@@ -156,7 +161,7 @@ Users can edit and/or delete their own message and the homepage will be updated.
 
 ## Testing
 
-Below is evidence of the external testing that was completed in the allotted time frame. The developer team also each manually tested the site.
+Below is evidence of the external testing that we were able to complete in the allotted time frame, but it is missing external testing for Python, HTML, and accessibility. The developer team also each manually tested the site.
 
 ### Lighthouse
 
