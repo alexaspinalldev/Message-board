@@ -114,27 +114,6 @@ Message Board is reponsive across screen sizes thanks to the use of media querie
 - The delete button to delete a post you no longer want displayed
 - Like button to add a like reaction to the post
 
-#### Landing Page
-User first sees a welcoming landing page, acting similar to the front of a greeting card.
-<details><summary>View</summary>
-
-![Landing page](readme/images/landing-page.png)
-</details>
-
-#### Form Submissions
-Users signed into an account are able to submit a message. Their message along with their username then displays on the homepage message board. 
-<details><summary>View</summary>
-
-![Message board](readme/images/view-message.png)
-</details>
-
-#### Message Board
-Users can edit and/or delete their own message and the homepage will be updated.
-<details><summary>View</summary>
-
-![Message edit](readme/images/edit-post.png)
-</details>
-
 ### Future Features
 
 * Ability to filter or search for specific messages.
