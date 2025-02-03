@@ -53,7 +53,7 @@ The <a href="" target="_blank">project board</a> shows the complete user stories
 
 ## Branding
 
-![Message Board branding](readme/images/message-board-branding.png)
+![Message Board branding](readme/images/message-board-branding-slide.png)
 
 ### Fonts
 
