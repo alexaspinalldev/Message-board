@@ -394,13 +394,7 @@ footer a:hover {
     }
 }
 
-@media (min-width: 785px) {
-    .post-cloud {
-        width: 50vw;
-    }
-}
-
-@media (min-width: 1111px) {
+@media (min-width: 1024px) {
     .post-cloud {
         width: 40vw;
     }

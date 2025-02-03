@@ -105,6 +105,7 @@ body {
     background-color: var(--light-blue);
     margin-bottom: 1rem;
     width: 100%;
+    padding: 0.5rem 1rem;
 }
 
 .navbar .nav-link {
@@ -115,6 +116,14 @@ body {
     font-size: 20px;
 }
 
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
 .nav-link:hover {
     color: var(--yellow);
 }
@@ -123,26 +132,14 @@ body {
     font-weight: 480;
 }
 
-/*masthead*/
-
-.header-container {
-    padding: 0 1.5rem;
-    text-align: center;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .thank-you-logo {
-    max-width: 600px;
-    width: 90%;
-    max-height: 200px;
-    display: block;
+    max-width: 150px;
+    width: auto;
+    height: 50px;
     object-fit: contain;
-    margin-bottom: .5rem;
 }
 
+/*main*/
 main {
     display: flex;
     flex-direction: column;
@@ -397,13 +394,7 @@ footer a:hover {
     }
 }
 
-@media (min-width: 785px) {
-    .post-cloud {
-        width: 50vw;
-    }
-}
-
-@media (min-width: 1111px) {
+@media (min-width: 1024px) {
     .post-cloud {
         width: 40vw;
     }
