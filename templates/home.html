@@ -129,11 +129,11 @@
                 <!-- Form to submit own thank u's -->
             </div>
                 <div id="post-form-container">
-                    <h2>Submit your own 'Thank You' Message here: </h2>
+                    <h2 class="form-heading">Submit your own 'Thank You' Message here: </h2>
                     <form method="post" action="{% url 'post_form' %}">
                         {% csrf_token %}
                         {{ form.as_p }}
-                        <button type="submit">Submit</button>
+                        <button class="submit-button" type="submit">Submit</button>
                     </form>
                 </div>
             </div>
