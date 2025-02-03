@@ -155,6 +155,17 @@ The wireframes below show the planned output for Message Board on desktop. The e
 ![Lighthouse testing](readme/images/lighthouse-form-mobile.png)
 </details>
 
+### CSS
+
+<details><summary>Validation</summary>
+
+![Lighthouse testing](readme/images/css-validation.png)
+</details>
+<details><summary>Warnings</summary>
+
+![Lighthouse testing](readme/images/css-warnings.png)
+</details>
+
 ## Credits
 ### Code
 * ...
