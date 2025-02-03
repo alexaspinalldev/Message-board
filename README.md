@@ -192,6 +192,10 @@ Below is evidence of the external testing that was completed in the allotted tim
 
 ![Lighthouse testing](readme/images/script.js.png)
 </details>
+<details><summary>cloudPlacement.js</summary>
+
+![Lighthouse testing](readme/images/cloudPlacement.js.png)
+</details>
 
 ## Credits
 ### Code
