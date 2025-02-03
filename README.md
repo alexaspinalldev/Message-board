@@ -187,6 +187,17 @@ Below is evidence of the external testing that was completed in the allotted tim
 ![Lighthouse testing](readme/images/css-warnings.png)
 </details>
 
+### JavaScript
+
+<details><summary>script.js</summary>
+
+![Lighthouse testing](readme/images/script.js.png)
+</details>
+<details><summary>cloudPlacement.js</summary>
+
+![Lighthouse testing](readme/images/cloudPlacement.js.png)
+</details>
+
 ## Credits
 ### Code
 * Code Institute's Codestar project assisted with the foundations of Message Board.
