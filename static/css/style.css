@@ -154,13 +154,14 @@ main {
     height: 100%;
     width: 100%;
     flex-grow: 1;
-    /* /* min-height: calc(100vh - 100px); */
-    /* Commenting out to ensure the whole thing fits on one page :) */
 }
+
+/* /* min-height: calc(100vh - 100px); */
+/* Commenting out to ensure the whole thing fits on one page :) */
 
 .post-cloud {
     position: absolute;
-    width: 20vw;
+    width: 30vw;
     height: min-content;
     border-radius: 25px;
     transition: transform 0.5s;
@@ -170,6 +171,8 @@ main {
     border: 2px solid var(--purple);
     box-shadow: 10px 10px rgba(251, 211, 1, 0.5);*/
 }
+
+/* Varying cloud styles*/
 
 .cloud-style-1 {
     background-color: var(--dark-blue);
@@ -224,9 +227,11 @@ main {
 }
 
 .modal-content {
-    border-radius: 15px;
+    border-radius: 25px;
     padding: 20px;
-    background-color: #7BB7E0;
+    background-color: var(--off-white);
+    color: var(--dark-blue);
+    border: 2px solid var(--orange);
     /* Same background color as post clouds */
 }
 
@@ -247,12 +252,52 @@ main {
 
 /* modal buttons */
 .modal .btn {
-    margin: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid var(--purple);
+    background-color: var(--purple);
+    color: var(--off-white);
+    font-family: var(--body-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.modal .btn:hover {
+    border: 1px solid var(--purple);
+    background-color: var(--off-white);
+    color: var(--purple);
+    font-family: var(--body-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 #post-form-container {
     display: flex;
     gap: 20px;
+}
+
+.submit-button {
+    margin-top: 0.5rem;
+    border: 1px solid var(--purple);
+    border-radius: 5px;
+    background-color: var(--purple);
+    color: var(--off-white);
+    font-family: var(--body-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.submit-button:hover {
+    border: 1px solid var(--purple);
+    background-color: var(--off-white);
+    color: var(--purple);
+    border-radius: 5px;
+    font-family: var(--body-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 /* footer */
@@ -300,14 +345,13 @@ footer a:hover {
     margin-bottom: 0;
 }
 
-
 /*Auth pages*/
 
 .signout-button,
 .signup-button,
 .login-button {
-    border: 1px solid var(--orange);
-    background-color: var(--orange);
+    border: 1px solid var(--purple);
+    background-color: var(--purple);
     color: var(--off-white);
     font-family: var(--body-font);
     font-weight: 600;
@@ -318,9 +362,9 @@ footer a:hover {
 .signout-button:hover,
 .signup-button:hover,
 .login-button:hover {
-    border: 1px solid var(--orange);
+    border: 1px solid var(--purple);
     background-color: var(--off-white);
-    color: var(--orange);
+    color: var(--purple);
     font-family: var(--body-font);
     font-weight: 600;
     text-transform: uppercase;
@@ -328,6 +372,8 @@ footer a:hover {
 }
 
 /* Media Queries */
+
+/*Footer*/
 @media (min-width: 620px) {
     .footer-control {
         gap: 1.5rem;
@@ -339,5 +385,24 @@ footer a:hover {
     .footer-control {
         flex-wrap: wrap;
         gap: 0.5rem;
+    }
+}
+
+/* Post cloud media queries*/
+@media (max-width: 1111px) {
+    .post-cloud {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 785px) {
+    .post-cloud {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .post-cloud {
+        width: 75vw;
     }
 }
