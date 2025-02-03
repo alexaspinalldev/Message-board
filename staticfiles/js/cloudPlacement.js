@@ -2,9 +2,7 @@ const postContainer = document.getElementById('post-container');
 const postContainerSize = postContainer.getBoundingClientRect();
 const styles = ["cloud-style-1", "cloud-style-2", "cloud-style-3", "cloud-style-4", "cloud-style-5"];
 
-
 window.onload = randomCloud()
-window.resize = randomCloud()
 
 function randomCloud() {
     document.querySelectorAll('.post-cloud').forEach(div => {

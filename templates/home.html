@@ -65,66 +65,63 @@
 
                 </ul>
             </div>
+            <!-- Logo in the center -->
+            <div class="navbar-brand mx-auto">
+                <img src="{% static 'images/thank-you-logo.webp' %}" alt="Thank you Logo" class="thank-you-logo">
+            </div>
         </div>
     </nav>
 
-    <header>
-        <div class="header-container">
-            <img src="{% static 'images/thank-you-logo.webp' %}" alt="Thank you Logo" class="thank-you-logo">
-        </div>
-
-    </header>
-
     <main>
-            <div id="post-container">
-                {% for post in object_list %}
-                <div class="post-cloud" javascript: onload();">
-                    <h2 class="post-title">{{post.title}}</h2>
-                    <p>{{ post.author.username }}</p>
-                    <p class="post-text">{{post.content | linebreaks}}</p>
+        <div id="post-container">
+            {% for post in object_list %}
+            <div class="post-cloud" javascript: onload();">
+                <h2 class="post-title">{{post.title}}</h2>
+                <p>{{ post.author.username }}</p>
+                <p class="post-text">{{post.content | linebreaks}}</p>
                 {% if post.author == user %} <!--- only edit and delete own posts -->
-                    <button data-open-modal="editModal{{ post.id }}">
-                        <i class="fas fa-pencil-alt"></i>
-                    </button>
-                    <button data-open-modal="deleteModal{{ post.id }}">
-                        <i class="fas fa-trash-alt"></i>
-                    </button>
+                <button data-open-modal="editModal{{ post.id }}">
+                    <i class="fas fa-pencil-alt"></i>
+                </button>
+                <button data-open-modal="deleteModal{{ post.id }}">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
                 {% endif %}
 
-                    <div id="editModal{{ post.id }}" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('editModal{{ post.id }}')">&times;</span>
-                            <h2>Edit Post</h2>
-                            <form method="post" action="{% url 'edit_post' post.id %}">
-                                {% csrf_token %}
-                                <label for="title">Title:</label>
-                                <input type="text" id="title" name="title" value="{{ post.title }}" class="form-control">
-                            
-                                <label for="content">Content:</label>
-                                <textarea id="content" name="content" class="form-control">{{ post.content }}</textarea>
-                            
-                                <button type="submit" class="btn btn-primary">Save</button>
-                            </form>
-                            
-                        </div>
+                <div id="editModal{{ post.id }}" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('editModal{{ post.id }}')">&times;</span>
+                        <h2>Edit Post</h2>
+                        <form method="post" action="{% url 'edit_post' post.id %}">
+                            {% csrf_token %}
+                            <label for="title">Title:</label>
+                            <input type="text" id="title" name="title" value="{{ post.title }}" class="form-control">
+
+                            <label for="content">Content:</label>
+                            <textarea id="content" name="content" class="form-control">{{ post.content }}</textarea>
+
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </form>
+
                     </div>
+                </div>
 
 
 
-                    <!-- delete function via modal-->
-                    <div id="deleteModal{{ post.id }}" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('deleteModal{{ post.id }}')">&times;</span>
-                            <h2>Are you sure you want to delete this post?</h2>
-                            <p>{{ post.title }}</p>
-                            <p>{{ post.content }}</p>
-                            <form method="post" action="{% url 'delete_post' post.id %}">
-                                {% csrf_token %}
-                                <button type="submit" class="btn btn-danger">Yes, delete</button>
-                                <button type="button" class="btn btn-secondary">Cancel</button>
-                            </form>
-                        </div>
+                <!-- delete function via modal-->
+                <div id="deleteModal{{ post.id }}" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('deleteModal{{ post.id }}')">&times;</span>
+                        <h2>Are you sure you want to delete this post?</h2>
+                        <p>{{ post.title }}</p>
+                        <p>{{ post.content }}</p>
+                        <form method="post" action="{% url 'delete_post' post.id %}">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger">Yes, delete</button>
+                            <button type="button" class="btn btn-secondary">Cancel</button>
+                        </form>
                     </div>
+                </div>
 
 
                 </div>
@@ -134,7 +131,6 @@
                 <div id="post-form-container">
                     <h2>Submit your own 'Thank You' Message here: </h2>
                     <a href="{% url 'post_form' %}" class="btn btn-primary">Submit</a>
-                </div>
             </div>
     </main>
 
