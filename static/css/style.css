@@ -143,9 +143,6 @@ body {
     object-fit: contain;
 }
 
-.right {
-    justify-self: right;
-}
 
 /*main*/
 main {
@@ -162,8 +159,7 @@ main {
     padding: 10px;
 }
 
-/* /* min-height: calc(100vh - 100px); */
-/* Commenting out to ensure the whole thing fits on one page :) */
+
 
 .post-cloud {
     width: 100%;
@@ -172,10 +168,6 @@ main {
     transition: transform 0.5s;
     padding: 1.5rem;
     margin-bottom: 20px;
-    /*background-color: var(--off-white);
-    color: var(--dark-blue);
-    border: 2px solid var(--purple);
-    box-shadow: 10px 10px rgba(251, 211, 1, 0.5);*/
 }
 
 /* Varying cloud styles*/
@@ -183,35 +175,31 @@ main {
 .cloud-style-1 {
     background-color: var(--dark-blue);
     color: var(--off-white);
-    /*box-shadow: 10px 10px rgba(19, 55, 149, 0.5); */
     border: 1px solid var(--off-white);
 }
 
 .cloud-style-2 {
     background-color: var(--purple);
     color: var(--off-white);
-    /*box-shadow: 10px 10px rgba(136, 28, 166, 0.5);*/
     border: 1px solid var(--off-white);
 }
 
 .cloud-style-3 {
     background-color: var(--light-blue);
     color: var(--dark-blue);
-    /*box-shadow: 10px 10px rgba(164, 206, 234, 0.5);*/
     border: 1px solid var(--off-white);
 }
 
 .cloud-style-4 {
     background-color: var(--yellow);
     color: var(--dark-blue);
-    /*box-shadow: 10px 10px rgba(251, 211, 1, 0.5);*/
+
     border: 1px solid var(--off-white);
 }
 
 .cloud-style-5 {
     background-color: var(--green);
     color: var(--off-white);
-    /*box-shadow: 10px 10px rgba(19, 134, 71, 0.5);*/
     border: 1px solid var(--off-white);
 }
 
@@ -428,6 +416,11 @@ footer a:hover {
         flex-wrap: wrap;
         gap: 0.5rem;
     }
+
+    .post-cloud:hover {
+        transform: none;
+        z-index: inital;
+    }
 }
 
 /* Post cloud media queries*/
@@ -437,6 +430,9 @@ footer a:hover {
         width: 60vw;
         margin-bottom: 0;
     }
+    .post-cloud:hover {
+        transform: none;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -445,71 +441,10 @@ footer a:hover {
     }
 }
 
-/* Like button styles */
-.like-style-1 {
-    background-color: var(--dark-blue);
-    color: var(--off-white);
-    border: 1px solid var(--off-white);
-}
-
-.like-style-1:hover {
-    color: var(--dark-blue);
-    background-color: var(--off-white);
-    border: 1px solid var(--off-white);
-}
-
-.like-style-2 {
-    background-color: var(--purple);
-    color: var(--off-white);
-    border: 1px solid var(--off-white);
-}
-
-.like-style-2:hover {
-    color: var(--purple);
-    background-color: var(--off-white);
-    border: 1px solid var(--off-white);
-}
-
-.like-style-3 {
-    background-color: var(--light-blue);
-    color: var(--dark-blue);
-    border: 1px solid var(--off-white);
-}
-
-.like-style-3:hover {
-    color: var(--off-white);
-    background-color: var(--dark-blue);
-    border: 1px solid var(--off-white);
-}
-
-.like-style-4 {
-    background-color: var(--yellow);
-    color: var(--dark-blue);
-    border: 1px solid var(--off-white);
-}
-
-.like-style-4:hover {
-    color: var(--yellow);
-    background-color: var(--dark-blue);
-    border: 1px solid var(--off-white);
-}
-
-.like-style-5 {
-    background-color: var(--green);
-    color: var(--off-white);
-    border: 1px solid var(--off-white);
-}
-
-.like-style-5:hover {
-    color: var(--green);
-    background-color: var(--off-white);
-    border: 1px solid var(--off-white);
-}
-/* Hover effects for like buttons */
-.like-style-1:hover,
-.like-style-2:hover,
-.like-style-3:hover,
-.like-style-4:hover,
-.like-style-5:hover {
-    cursor: pointer;
+/* Disable hover effects on touch devices */
+@media (hover: none) {
+    .post-cloud:hover {
+        z-index: initial;
+        transform: none;
+    }
 }
