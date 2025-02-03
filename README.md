@@ -106,10 +106,26 @@ The wireframes below show the planned output for Message Board on desktop. The e
 ## Features
 
 ### Existing Features
+- Landing page
+- Home page where the messages are displayed
+- Submit button to open the post form
+- A form page to submit a message
+- The edit feature to change the content of your post
+- The delete button to delete a post you no longer want displayed
+- Like button to add a like reaction to the post
+- User Authentication: Users can sign up, log in, and log out.
+- User Profiles: Each user has a profile page displaying their posts and reactions.
+- Responsive Design: The application is fully responsive and works on various devices (desktop, tablet, mobile).
+
 
 ### Future Features
-
-* ...
+- More reaction options
+- Commenting System: Allow users to comment on messages.
+- Notification System: Notify users when their posts receive reactions or comments.
+- Dark Mode: A dark mode option for better accessibility and user preference.
+- Internationalization: Support for multiple languages.
+- File Uploads: Allow users to upload images or files with their messages.
+- Real-Time Updates: Implement real-time updates for new messages and reactions using WebSockets.
 
 ## Deployment
 - **Platform:** Heroku
