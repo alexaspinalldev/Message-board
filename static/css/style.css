@@ -170,23 +170,7 @@ main {
     box-shadow: 10px 10px rgba(251, 211, 1, 0.5);*/
 }
 
-@media (max-width: 1111px) { 
-    .post-cloud {
-        width: 50vw;
-    }
-}
-
-@media (max-width: 785px) { 
-    .post-cloud {
-        width: 60vw;
-    }
-}
-
-@media (max-width: 600px) { 
-    .post-cloud {
-        width: 75vw;
-    }
-}
+/* Varying cloud styles*/
 
 .cloud-style-1 {
     background-color: var(--dark-blue);
@@ -241,9 +225,11 @@ main {
 }
 
 .modal-content {
-    border-radius: 15px;
+    border-radius: 25px;
     padding: 20px;
-    background-color: #7BB7E0;
+    background-color: var(--off-white);
+    color: var(--dark-blue);
+    border: 2px solid var(--orange);
     /* Same background color as post clouds */
 }
 
@@ -313,7 +299,6 @@ footer a:hover {
     margin-bottom: 0;
 }
 
-
 /*Auth pages*/
 
 .signout-button,
@@ -341,6 +326,8 @@ footer a:hover {
 }
 
 /* Media Queries */
+
+/*Footer*/
 @media (min-width: 620px) {
     .footer-control {
         gap: 1.5rem;
@@ -352,5 +339,24 @@ footer a:hover {
     .footer-control {
         flex-wrap: wrap;
         gap: 0.5rem;
+    }
+}
+
+/* Post cloud media queries*/
+@media (max-width: 1111px) {
+    .post-cloud {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 785px) {
+    .post-cloud {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .post-cloud {
+        width: 75vw;
     }
 }
