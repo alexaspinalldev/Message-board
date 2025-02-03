@@ -177,31 +177,36 @@ main {
 .cloud-style-1 {
     background-color: var(--dark-blue);
     color: var(--off-white);
-    box-shadow: 10px 10px rgba(19, 55, 149, 0.5);
+    /*box-shadow: 10px 10px rgba(19, 55, 149, 0.5); */
+    border: 1px solid var(--off-white);
 }
 
 .cloud-style-2 {
     background-color: var(--purple);
     color: var(--off-white);
-    box-shadow: 10px 10px rgba(136, 28, 166, 0.5);
+    /*box-shadow: 10px 10px rgba(136, 28, 166, 0.5);*/
+    border: 1px solid var(--off-white);
 }
 
 .cloud-style-3 {
     background-color: var(--light-blue);
     color: var(--dark-blue);
-    box-shadow: 10px 10px rgba(164, 206, 234, 0.5);
+    /*box-shadow: 10px 10px rgba(164, 206, 234, 0.5);*/
+    border: 1px solid var(--off-white);
 }
 
 .cloud-style-4 {
     background-color: var(--yellow);
     color: var(--dark-blue);
-    box-shadow: 10px 10px rgba(251, 211, 1, 0.5);
+    /*box-shadow: 10px 10px rgba(251, 211, 1, 0.5);*/
+    border: 1px solid var(--off-white);
 }
 
 .cloud-style-5 {
     background-color: var(--green);
     color: var(--off-white);
-    box-shadow: 10px 10px rgba(19, 134, 71, 0.5);
+    /*box-shadow: 10px 10px rgba(19, 134, 71, 0.5);*/
+    border: 1px solid var(--off-white);
 }
 
 .post-title {
