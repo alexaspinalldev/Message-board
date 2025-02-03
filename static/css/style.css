@@ -5,9 +5,9 @@
     --heading-font: "Luckiest Guy", sans-serif;
     --body-font: "Shadows Into Light Two", sans-serif;
     --dark-blue: #133795;
-    --light-blue: #7BB7E0;
+    --light-blue: #A4CEEA;
     --off-white: #FFFCF9;
-    --green: #169D53;
+    --green: #138647;
     --yellow: #FBD301;
     --orange: #ED5F1E;
     --purple: #881CA6;
@@ -153,20 +153,51 @@ main {
     border: 1px solid red;
     height: 100%;
     width: 100%;
-    min-height: calc(100vh - 100px); /* space for posts :) */
+    min-height: calc(100vh - 100px);
+    /* space for posts :) */
 }
 
 .post-cloud {
     position: absolute;
     width: 20vw;
     height: min-content;
-    background-color: var(--off-white);
-    color: var(--dark-blue);
-    border: 2px solid var(--purple);
     border-radius: 25px;
     transition: transform 0.5s;
     padding: 1.5rem;
+    /*background-color: var(--off-white);
+    color: var(--dark-blue);
+    border: 2px solid var(--purple);
+    box-shadow: 10px 10px rgba(251, 211, 1, 0.5);*/
+}
+
+.cloud-style-1 {
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+    box-shadow: 10px 10px rgba(19, 55, 149, 0.5);
+}
+
+.cloud-style-2 {
+    background-color: var(--purple);
+    color: var(--off-white);
+    box-shadow: 10px 10px rgba(136, 28, 166, 0.5);
+}
+
+.cloud-style-3 {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    box-shadow: 10px 10px rgba(164, 206, 234, 0.5);
+}
+
+.cloud-style-4 {
+    background-color: var(--yellow);
+    color: var(--dark-blue);
     box-shadow: 10px 10px rgba(251, 211, 1, 0.5);
+}
+
+.cloud-style-5 {
+    background-color: var(--green);
+    color: var(--off-white);
+    box-shadow: 10px 10px rgba(19, 134, 71, 0.5);
 }
 
 .post-title {
@@ -186,19 +217,23 @@ main {
 
 /* Custom modal styles */
 .modal-dialog {
-    max-width: 80%; /* Adjust width as needed */
+    max-width: 80%;
+    /* Adjust width as needed */
     margin: 1.75rem auto;
 }
 
 .modal-content {
     border-radius: 15px;
     padding: 20px;
-    background-color: #7BB7E0; /* Same background color as post clouds */
+    background-color: #7BB7E0;
+    /* Same background color as post clouds */
 }
 
 /* Custom modal header and body styles */
-.modal-header, .modal-body {
-    border-bottom: none; /* Remove border between header and body */
+.modal-header,
+.modal-body {
+    border-bottom: none;
+    /* Remove border between header and body */
 }
 
 .modal-header {
