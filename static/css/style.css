@@ -215,8 +215,6 @@ main {
 
 /* edit modal to allow enoough space */
 
-/* edit modal to allow enoough space */
-
 /* Custom modal styles */
 .modal-dialog {
     max-width: 80%;
@@ -382,20 +380,5 @@ footer a:hover {
     .footer-control {
         flex-wrap: wrap;
         gap: 0.5rem;
-    }
-}
-
-/* Post cloud media queries*/
-@media (min-width: 620px) {
-    .post-cloud {
-        position: absolute;
-        width: 60vw;
-        margin-bottom: 0;
-    }
-}
-
-@media (min-width: 1024px) {
-    .post-cloud {
-        width: 40vw;
     }
 }
