@@ -154,8 +154,10 @@ main {
     height: 100%;
     width: 100%;
     flex-grow: 1;
-    /* /* min-height: calc(100vh - 100px); */
-    /* Commenting out to ensure the whole thing fits on one page :) */
+}
+
+/* /* min-height: calc(100vh - 100px); */
+/* Commenting out to ensure the whole thing fits on one page :) */
 
 .post-cloud {
     position: absolute;
@@ -273,8 +275,30 @@ main {
 .post-form-container {
     display: flex;
     gap: 20px;
-};
+}
 
+.submit-button {
+    margin-top: 0.5rem;
+    border: 1px solid var(--purple);
+    border-radius: 5px;
+    background-color: var(--purple);
+    color: var(--off-white);
+    font-family: var(--body-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.submit-button:hover {
+    border: 1px solid var(--purple);
+    background-color: var(--off-white);
+    color: var(--purple);
+    border-radius: 5px;
+    font-family: var(--body-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
 /* footer */
 
