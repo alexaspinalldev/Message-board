@@ -70,7 +70,7 @@ Message Board features a bold and vibrant colour palette, designed to create a w
 
 ### Imagery
 
-All imagery for Message Board is from Canva, including the logo design and customisable graphics.
+All imagery for Message Board is from Canva, including the logo design and customisable graphics. The Message Board logo has been made available as a <a href="https://www.canva.com/design/DAGeDvOeI_E/ZyXe0WT5poslv3GVNi5maQ/view?utm_content=DAGeDvOeI_E&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview">template on Canva</a> for anyone choosing to customise their own version.
 
 <details><summary>View</summary>
 
@@ -117,6 +117,7 @@ All imagery for Message Board is from Canva, including the logo design and custo
   - Ensured DEBUG mode is disabled in production.
 
  <a href="https://messageboard1-f1454f42f245.herokuapp.com/" target="_blank">View the deployed site here.</a>
+
 
 ## AI Implementation and Orchestration
 ### Use Cases and Reflections:
