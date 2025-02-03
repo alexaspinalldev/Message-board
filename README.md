@@ -79,7 +79,14 @@ All imagery for Message Board is from Canva, including the logo design and custo
 
 ### Wireframes
 
-**Insert image** 
+The wireframes below show the planned output for Message Board on desktop. The end result is very similar to these, with the focus being the randomised collage of messages that come to the front when hovered over. On a mobile view the messages are instead displayed in a list to ensure each message is readable.
+
+<details><summary>View</summary>
+
+![Message Board wireframes](readme/images/landing-wireframe.png)
+![Message Board wireframes](readme/images/homepage-wireframe.png)
+</details>
+
 
 ### Responsiveness
 
