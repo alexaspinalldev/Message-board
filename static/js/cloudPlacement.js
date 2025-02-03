@@ -11,7 +11,15 @@ function randomCloud() {
         div.style.left = randomPx(postContainerSize.width - divSize.width) + 'px';
 
         // Apply random style
-        div.classList.add(styles[Math.floor(Math.random() * styles.length)]);
+        let randomNum = Math.floor(Math.random() * styles.length);
+        let randomStyle = styles[randomNum];
+        div.classList.add(randomStyle);
+
+        // Apply the same style to the like button within the post-cloud
+        const likeButton = div.querySelector('.like');
+        if (likeButton) {
+            likeButton.classList.add(`like-style-${randomNum + 1}`);
+        }
     });
 }
 

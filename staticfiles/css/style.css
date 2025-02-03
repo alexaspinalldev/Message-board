@@ -223,8 +223,6 @@ main {
 
 /* edit modal to allow enoough space */
 
-/* edit modal to allow enoough space */
-
 /* Custom modal styles */
 .modal-dialog {
     max-width: 80%;
@@ -262,16 +260,6 @@ main {
     border: 1px solid var(--purple);
     background-color: var(--purple);
     color: var(--off-white);
-    font-family: var(--body-font);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.modal .btn:hover {
-    border: 1px solid var(--purple);
-    background-color: var(--off-white);
-    color: var(--purple);
     font-family: var(--body-font);
     font-weight: 600;
     text-transform: uppercase;
@@ -389,7 +377,6 @@ footer a:hover {
 
 /* Media Queries */
 
-/*Footer*/
 @media (min-width: 620px) {
     .footer-control {
         gap: 1.5rem;
@@ -405,7 +392,6 @@ footer a:hover {
 }
 
 /* Post cloud media queries*/
-
 @media (min-width: 620px) {
     .post-cloud {
         position: absolute;
@@ -418,4 +404,73 @@ footer a:hover {
     .post-cloud {
         width: 40vw;
     }
+}
+
+/* Like button styles */
+.like-style-1 {
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-1:hover {
+    color: var(--dark-blue);
+    background-color: var(--off-white);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-2 {
+    background-color: var(--purple);
+    color: var(--off-white);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-2:hover {
+    color: var(--purple);
+    background-color: var(--off-white);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-3 {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-3:hover {
+    color: var(--off-white);
+    background-color: var(--dark-blue);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-4 {
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-4:hover {
+    color: var(--yellow);
+    background-color: var(--dark-blue);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-5 {
+    background-color: var(--green);
+    color: var(--off-white);
+    border: 1px solid var(--off-white);
+}
+
+.like-style-5:hover {
+    color: var(--green);
+    background-color: var(--off-white);
+    border: 1px solid var(--off-white);
+}
+/* Hover effects for like buttons */
+.like-style-1:hover,
+.like-style-2:hover,
+.like-style-3:hover,
+.like-style-4:hover,
+.like-style-5:hover {
+    cursor: pointer;
 }
