@@ -53,7 +53,7 @@ The <a href="" target="_blank">project board</a> shows the complete user stories
 
 ## Branding
 
-![Message Board branding](readme/images/message-board-branding.png)
+![Message Board branding](readme/images/message-board-branding-slide.png)
 
 ### Fonts
 
@@ -65,12 +65,12 @@ Message Board features a bold and vibrant colour palette, designed to create a w
 
 <details><summary>View</summary>
 
-![Message Board colour palette](readme/images/message-board-colour-palette.png)
+![Message Board colour palette](readme/images/message-board-colours-palette.png)
 </details>
 
 ### Imagery
 
-All imagery for Message Board is from Canva, including the logo design and customisable graphics.
+All imagery for Message Board is from Canva, including the logo design and customisable graphics. The Message Board logo has been made available as a <a href="https://www.canva.com/design/DAGeDvOeI_E/ZyXe0WT5poslv3GVNi5maQ/view?utm_content=DAGeDvOeI_E&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview">template on Canva</a> for anyone choosing to customise their own version.
 
 <details><summary>View</summary>
 
@@ -79,7 +79,14 @@ All imagery for Message Board is from Canva, including the logo design and custo
 
 ### Wireframes
 
-**Insert image** 
+The wireframes below show the planned output for Message Board on desktop. The end result is very similar to these, with the focus being the randomised collage of messages that come to the front when hovered over. On a mobile view the messages are instead displayed in a list to ensure each message is readable.
+
+<details><summary>View</summary>
+
+![Message Board wireframes](readme/images/landing-wireframe.png)
+![Message Board wireframes](readme/images/homepage-wireframe.png)
+</details>
+
 
 ### Responsiveness
 
@@ -117,6 +124,7 @@ All imagery for Message Board is from Canva, including the logo design and custo
   - Ensured DEBUG mode is disabled in production.
 
  <a href="https://messageboard1-f1454f42f245.herokuapp.com/" target="_blank">View the deployed site here.</a>
+
 
 ## AI Implementation and Orchestration
 ### Use Cases and Reflections:

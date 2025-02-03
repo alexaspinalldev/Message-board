@@ -31,6 +31,8 @@ class MessageList(generic.ListView):
             like_count=Count('reaction', filter=Q(reaction__reaction='like'))
         )
 
+
+
 @login_required
 def post_form(request):
     if request.method == 'POST':
@@ -42,13 +44,10 @@ def post_form(request):
             return redirect('home')
     else:
         form = PostForm()
-    return render(
-        request, 'home.html', {
-            'form': form, 'posts': Post.objects.all().order_by('-date_posted')})
+    return render(request, 'post_form.html', {'form': form})
 
 
 # views for the editing and deleting post
-
 @login_required
 def edit_post(request, post_id):
     post = get_object_or_404(Post, id=post_id)
