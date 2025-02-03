@@ -151,18 +151,19 @@ main {
     height: 100%;
     width: 100%;
     flex-grow: 1;
+    padding: 10px;
 }
 
 /* /* min-height: calc(100vh - 100px); */
 /* Commenting out to ensure the whole thing fits on one page :) */
 
 .post-cloud {
-    position: absolute;
-    width: 30vw;
+    width: 100%;
     height: min-content;
     border-radius: 25px;
     transition: transform 0.5s;
     padding: 1.5rem;
+    margin-bottom: 20px;
     /*background-color: var(--off-white);
     color: var(--dark-blue);
     border: 2px solid var(--purple);
@@ -370,7 +371,6 @@ footer a:hover {
 
 /* Media Queries */
 
-/*Footer*/
 @media (min-width: 620px) {
     .footer-control {
         gap: 1.5rem;
@@ -386,20 +386,22 @@ footer a:hover {
 }
 
 /* Post cloud media queries*/
-@media (max-width: 1111px) {
+@media (min-width: 620px) {
+    .post-cloud {
+        position: absolute;
+        width: 60vw;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 785px) {
     .post-cloud {
         width: 50vw;
     }
 }
 
-@media (max-width: 785px) {
+@media (min-width: 1111px) {
     .post-cloud {
-        width: 60vw;
-    }
-}
-
-@media (max-width: 600px) {
-    .post-cloud {
-        width: 75vw;
+        width: 40vw;
     }
 }
