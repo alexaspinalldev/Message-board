@@ -35,7 +35,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background: var(--off-white);
     margin: 0;
 }
@@ -68,6 +68,7 @@ body {
 
 .landing-logo {
     max-width: 100%;
+    max-height: 50vh;
     height: auto;
     animation: spiral-bounce 1s ease-in-out;
     display: block;
@@ -77,6 +78,7 @@ body {
 .logo-container {
     width: 100%;
     max-width: 100%;
+    max-height: 70vh;
     padding: 0 1.5rem;
     text-align: center;
     box-sizing: border-box;
@@ -88,6 +90,7 @@ body {
 .button-envelope {
     background-color: var(--off-white);
     border: none;
+    max-height: 30vh;
 }
 
 .button-envelope:hover {
