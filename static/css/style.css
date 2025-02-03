@@ -250,7 +250,24 @@ main {
 
 /* modal buttons */
 .modal .btn {
-    margin: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid var(--purple);
+    background-color: var(--purple);
+    color: var(--off-white);
+    font-family: var(--body-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.modal .btn:hover {
+    border: 1px solid var(--purple);
+    background-color: var(--off-white);
+    color: var(--purple);
+    font-family: var(--body-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 
@@ -304,8 +321,8 @@ footer a:hover {
 .signout-button,
 .signup-button,
 .login-button {
-    border: 1px solid var(--orange);
-    background-color: var(--orange);
+    border: 1px solid var(--purple);
+    background-color: var(--purple);
     color: var(--off-white);
     font-family: var(--body-font);
     font-weight: 600;
@@ -316,9 +333,9 @@ footer a:hover {
 .signout-button:hover,
 .signup-button:hover,
 .login-button:hover {
-    border: 1px solid var(--orange);
+    border: 1px solid var(--purple);
     background-color: var(--off-white);
-    color: var(--orange);
+    color: var(--purple);
     font-family: var(--body-font);
     font-weight: 600;
     text-transform: uppercase;
