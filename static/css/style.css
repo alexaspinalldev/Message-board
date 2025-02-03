@@ -168,6 +168,7 @@ main {
     transition: transform 0.5s;
     padding: 1.5rem;
     margin-bottom: 20px;
+    box-shadow: 3px 3px 4px #6a6a6a;
 }
 
 .post-cloud svg {
