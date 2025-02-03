@@ -211,6 +211,20 @@ main {
     border: 1px solid var(--off-white);
 }
 
+.cloud-style-6 {
+    background-color: palegreen;
+    color: black;
+    fill: black;
+    border: 1px solid var(--off-white);
+}
+
+.cloud-style-7 {
+    background-color: lightpink;
+    color: black;
+    fill: black;
+    border: 1px solid var(--off-white);
+}
+
 .post-title {
     font-family: var(--heading-font);
     font-size: 22px;
@@ -516,6 +530,30 @@ footer a:hover {
     color: var(--green);
     background-color: var(--off-white);
     border: 1px solid var(--off-white);
+}
+
+.like-style-6 {
+    background-color: [palegreen];
+    color: black;
+    border: 1px solid black;
+}
+
+.like-style-6:hover {
+    color: palegreen;
+    background-color: black;
+    border: 1px solid palegreen;
+}
+
+.like-style-7 {
+    background-color: lightpink;
+    color: black;
+    border: 1px solid black;
+}
+
+.like-style-7:hover {
+    color: lightpink;
+    background-color: black;
+    border: 1px solid lightpink;
 }
 
 /* Hover effects for like buttons */
