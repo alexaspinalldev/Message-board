@@ -91,10 +91,9 @@ All imagery for Message Board is from Canva, including the logo design and custo
 
 ## ERD
 
-**Insert image** 
 <details><summary>View</summary>
 
-![Message Board ERD](assets/images)
+![Message Board ERD](readme/images/ERD-pic.png)
 </details>
     
 ## Features
