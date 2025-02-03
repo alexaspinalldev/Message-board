@@ -90,11 +90,7 @@ The wireframes below show the planned output for Message Board on desktop. The e
 
 ### Responsiveness
 
-**Insert image** 
-<details><summary>View</summary>
-
-![Message Board responsiveness](assets/images)
-</details>
+Message Board is reponsive across screen sizes thanks to the use of media queries, Bootstrap, and the changing layout on mobile.
 
 ## ERD
 
@@ -107,9 +103,31 @@ The wireframes below show the planned output for Message Board on desktop. The e
 
 ### Existing Features
 
+#### Landing Page
+User first sees a welcoming landing page, acting similar to the front of a greeting card.
+<details><summary>View</summary>
+
+![Landing page](readme/images/landing-page.png)
+</details>
+
+#### Form Submissions
+Users signed into an account are able to submit a message. Their message along with their username then displays on the homepage message board. 
+<details><summary>View</summary>
+
+![Message board](readme/images/view-message.png)
+</details>
+
+#### Message Board
+Users can edit and/or delete their own message and the homepage will be updated.
+<details><summary>View</summary>
+
+![Message edit](readme/images/edit-post.png)
+</details>
+
 ### Future Features
 
-* ...
+* Ability to filter or search for specific messages.
+* Ability to upload a picture of gif with a message.
 
 ## Deployment
 - **Platform:** Heroku
@@ -138,14 +156,40 @@ The wireframes below show the planned output for Message Board on desktop. The e
 
 ## Testing
 
-...
+Below is evidence of the external testing that was completed in the allotted time frame. The developer team also each manually tested the site.
+
+### Lighthouse
+
+<details><summary>Landing</summary>
+
+![Lighthouse testing](readme/images/lighthouse-home-desktop.png)
+![Lighthouse testing](readme/images/lighthouse-home-mobile.png)
+</details>
+<details><summary>Home</summary>
+
+![Lighthouse testing](readme/images/lighthouse-main-desktop.png)
+![Lighthouse testing](readme/images/lighthouse-main-mobile.png)
+</details>
+<details><summary>Form</summary>
+
+![Lighthouse testing](readme/images/lighthouse-form-desktop.png)
+![Lighthouse testing](readme/images/lighthouse-form-mobile.png)
+</details>
+
+### CSS
+
+<details><summary>Validation</summary>
+
+![Lighthouse testing](readme/images/css-validation.png)
+</details>
+<details><summary>Warnings</summary>
+
+![Lighthouse testing](readme/images/css-warnings.png)
+</details>
 
 ## Credits
 ### Code
-* ...
-
-### Content
-* ...
+* Code Institute's Codestar project assisted with the foundations of Message Board.
 
 ### Media
 * Canva
