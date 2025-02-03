@@ -390,3 +390,18 @@ footer a:hover {
         gap: 0.5rem;
     }
 }
+
+/* Post cloud media queries*/
+@media (min-width: 620px) {
+    .post-cloud {
+        position: absolute;
+        width: 60vw;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .post-cloud {
+        width: 40vw;
+    }
+}
