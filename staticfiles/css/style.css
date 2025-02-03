@@ -133,26 +133,26 @@ p {
 .thank-you-logo {
     max-width: 600px;
     width: 90%;
-    height: auto;
+    max-height: 200px;
     display: block;
     object-fit: contain;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
 }
 
-<<<<<<< HEAD
 main {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 #post-container {
     position: relative;
-    border: 1px solid red;
     height: 100%;
     width: 100%;
+    flex-grow: 1;
+    /* /* min-height: calc(100vh - 100px); */
+    /* Commenting out to ensure the whole thing fits on one page :) */
 }
-=======
->>>>>>> main
 
 .post-cloud {
     position: absolute;
@@ -160,16 +160,53 @@ main {
     height: min-content;
     background-color: #7BB7E0;
     border-radius: 50px;
-<<<<<<< HEAD
     transition: transform 0.5s;
 }
 
 .post-cloud:hover {
     z-index: 1000;
     transform: scale(1.1);
-=======
->>>>>>> main
 }
+
+/* edit modal to allow enoough space */
+
+/* edit modal to allow enoough space */
+
+/* Custom modal styles */
+.modal-dialog {
+    max-width: 80%; /* Adjust width as needed */
+    margin: 1.75rem auto;
+}
+
+.modal-content {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #7BB7E0; /* Same background color as post clouds */
+}
+
+/* Custom modal header and body styles */
+.modal-header, .modal-body {
+    border-bottom: none; /* Remove border between header and body */
+}
+
+.modal-header {
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-footer {
+    border-radius: 0 0 15px 15px;
+}
+
+/* modal buttons */
+.modal .btn {
+    margin: 0.5rem;
+}
+
+.post-form-container {
+    display: flex;
+    gap: 20px;
+};
+
 
 /* footer */
 
@@ -214,6 +251,33 @@ footer a:hover {
     font-weight: 180;
     letter-spacing: 0.5px;
     margin-bottom: 0;
+}
+
+
+/*Auth pages*/
+
+.signout-button,
+.signup-button,
+.login-button {
+    border: 1px solid var(--orange);
+    background-color: var(--orange);
+    color: var(--off-white);
+    font-family: var(--body-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.signout-button:hover,
+.signup-button:hover,
+.login-button:hover {
+    border: 1px solid var(--orange);
+    background-color: var(--off-white);
+    color: var(--orange);
+    font-family: var(--body-font);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 /* Media Queries */
