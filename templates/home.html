@@ -79,6 +79,7 @@
                 <h2 class="post-title">{{post.title}}</h2>
                 <p>{{ post.author.username }}</p>
                 <p class="post-text">{{post.content | linebreaks}}</p>
+                <p class="timestamp">Posted on: {{ post.date_posted }}</p>
                 {% if post.author == user %} <!--- only edit and delete own posts -->
                 <button data-open-modal="editModal{{ post.id }}">
                     <i class="fas fa-pencil-alt"></i>
