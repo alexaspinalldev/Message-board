@@ -109,7 +109,8 @@ The wireframes below show the planned output for Message Board on desktop. The e
 
 ### Future Features
 
-* ...
+* Ability to filter or search for specific messages.
+* Ability to upload a picture of gif with a message.
 
 ## Deployment
 - **Platform:** Heroku
@@ -168,10 +169,7 @@ The wireframes below show the planned output for Message Board on desktop. The e
 
 ## Credits
 ### Code
-* ...
-
-### Content
-* ...
+* Code Institute's Codestar project assisted with the foundations of Message Board.
 
 ### Media
 * Canva
