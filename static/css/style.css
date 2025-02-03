@@ -159,7 +159,7 @@ main {
 
 .post-cloud {
     position: absolute;
-    width: 20vw;
+    width: 30vw;
     height: min-content;
     border-radius: 25px;
     transition: transform 0.5s;
@@ -168,6 +168,24 @@ main {
     color: var(--dark-blue);
     border: 2px solid var(--purple);
     box-shadow: 10px 10px rgba(251, 211, 1, 0.5);*/
+}
+
+@media (max-width: 1111px) { 
+    .post-cloud {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 785px) { 
+    .post-cloud {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 600px) { 
+    .post-cloud {
+        width: 75vw;
+    }
 }
 
 .cloud-style-1 {
