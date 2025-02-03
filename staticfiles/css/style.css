@@ -170,36 +170,44 @@ main {
     margin-bottom: 20px;
 }
 
+.post-cloud svg {
+    height: 22px;
+}
+
 /* Varying cloud styles*/
 
 .cloud-style-1 {
     background-color: var(--dark-blue);
     color: var(--off-white);
+    fill: var(--off-white);
     border: 1px solid var(--off-white);
 }
 
 .cloud-style-2 {
     background-color: var(--purple);
     color: var(--off-white);
+    fill: var(--off-white);
     border: 1px solid var(--off-white);
 }
 
 .cloud-style-3 {
     background-color: var(--light-blue);
     color: var(--dark-blue);
+    fill: var(--dark-blue);
     border: 1px solid var(--off-white);
 }
 
 .cloud-style-4 {
     background-color: var(--yellow);
     color: var(--dark-blue);
-
+    fill: var(--dark-blue);
     border: 1px solid var(--off-white);
 }
 
 .cloud-style-5 {
     background-color: var(--green);
     color: var(--off-white);
+    fill: var(--off-white);
     border: 1px solid var(--off-white);
 }
 
@@ -437,7 +445,7 @@ footer a:hover {
 
 @media (min-width: 1024px) {
     .post-cloud {
-        width: 40vw;
+        width: 30vw;
     }
 }
 
