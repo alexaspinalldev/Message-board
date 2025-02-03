@@ -168,13 +168,7 @@
         crossorigin="anonymous"></script>
 
     <!-- Position the clouds on the page -->
-    <script>
-        window.onload = function() {
-            document.querySelectorAll('.post-cloud').forEach(div => {
-                div.style.top = Math.random() * (window.innerHeight - div.offsetHeight) + 'px';
-                div.style.left = Math.random() * (window.innerWidth - div.offsetWidth) + 'px';
-            });
-        };
+    <script src="{% static 'js/cloudPlacement.js' %}" defer>
     </script>
 
 </body>

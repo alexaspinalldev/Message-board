@@ -137,25 +137,25 @@ body {
 .thank-you-logo {
     max-width: 600px;
     width: 90%;
-    height: auto;
+    max-height: 200px;
     display: block;
     object-fit: contain;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
 }
 
 main {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 #post-container {
     position: relative;
-    border: 1px solid red;
     height: 100%;
     width: 100%;
-    min-height: calc(100vh - 100px);
-    /* space for posts :) */
-}
+    flex-grow: 1;
+    /* /* min-height: calc(100vh - 100px); */
+    /* Commenting out to ensure the whole thing fits on one page :) */
 
 .post-cloud {
     position: absolute;
@@ -248,6 +248,11 @@ main {
 .modal .btn {
     margin: 0.5rem;
 }
+
+.post-form-container {
+    display: flex;
+    gap: 20px;
+};
 
 
 /* footer */
