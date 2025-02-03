@@ -91,10 +91,9 @@ All imagery for Message Board is from Canva, including the logo design and custo
 
 ## ERD
 
-**Insert image** 
 <details><summary>View</summary>
 
-![Message Board ERD](assets/images)
+![Message Board ERD](readme/images/ERD-pic.png)
 </details>
     
 ## Features
@@ -121,11 +120,13 @@ All imagery for Message Board is from Canva, including the logo design and custo
 
 ## AI Implementation and Orchestration
 ### Use Cases and Reflections:
-  - **...:**
-    - ...
+  - **Code Suggestions and Autocompletion:**
+    - AI tools like GitHub Copilot have been instrumental in providing code suggestions and autocompletion, significantly speeding up the development process and reducing the likelihood of syntax errors.
+  - **Automated Testing:**
+    - AI has been used to generate a test cases, ensuring the robustness and reliability of the application.
 
 - **Overall Impact:**
-  - ...
+  - The integration of AI tools has streamlined the development workflow, enhanced code quality, and improved the efficiency of testing and content moderation processes.
 
 ## Testing
 

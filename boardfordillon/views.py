@@ -10,6 +10,7 @@ class MessageList(generic.ListView):
     model = Post
     template_name = "home.html"
 
+
 @login_required
 def post_form(request):
     if request.method == 'POST':
@@ -21,13 +22,10 @@ def post_form(request):
             return redirect('home')
     else:
         form = PostForm()
-    return render(
-        request, 'home.html', {
-            'form': form, 'object_list': Post.objects.all().order_by('-date_posted')})
+    return render(request, 'post_form.html', {'form': form})
 
 
 # views for the editing and deleting post
-
 @login_required
 def edit_post(request, post_id):
     post = get_object_or_404(Post, id=post_id)
