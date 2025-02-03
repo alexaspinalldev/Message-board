@@ -25,6 +25,10 @@ p {
     font-weight: 500;
 }
 
+body {
+    background-color: var(--off-white);
+}
+
 /* Landing page */
 .landing-body {
     display: flex;
@@ -157,8 +161,10 @@ main {
     width: 20vw;
     height: min-content;
     background-color: #7BB7E0;
-    border-radius: 50px;
+    border-radius: 25px;
     transition: transform 0.5s;
+    padding: 1.5rem;
+    box-shadow: 0 0 0 2px var(--yellow);
 }
 
 .post-cloud:hover {
