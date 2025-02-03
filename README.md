@@ -90,11 +90,7 @@ The wireframes below show the planned output for Message Board on desktop. The e
 
 ### Responsiveness
 
-**Insert image** 
-<details><summary>View</summary>
-
-![Message Board responsiveness](assets/images)
-</details>
+Message Board is reponsive across screen sizes thanks to the use of media queries, Bootstrap, and the changing layout on mobile.
 
 ## ERD
 
@@ -159,6 +155,8 @@ Users can edit and/or delete their own message and the homepage will be updated.
   - The integration of AI tools has streamlined the development workflow, enhanced code quality, and improved the efficiency of testing and content moderation processes.
 
 ## Testing
+
+Below is evidence of the external testing that was completed in the allotted time frame. The developer team also each manually tested the site.
 
 ### Lighthouse
 
