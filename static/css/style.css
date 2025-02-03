@@ -272,7 +272,7 @@ main {
     letter-spacing: 2px;
 }
 
-.post-form-container {
+#post-form-container {
     display: flex;
     gap: 20px;
 }

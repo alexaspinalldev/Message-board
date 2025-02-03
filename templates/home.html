@@ -80,13 +80,16 @@
                 {% for post in object_list %}
                 <div class="post-cloud" javascript: onload();">
                     <h2 class="post-title">{{post.title}}</h2>
+                    <p>{{ post.author.username }}</p>
                     <p class="post-text">{{post.content | linebreaks}}</p>
+                {% if post.author == user %} <!--- only edit and delete own posts -->
                     <button data-open-modal="editModal{{ post.id }}">
                         <i class="fas fa-pencil-alt"></i>
                     </button>
                     <button data-open-modal="deleteModal{{ post.id }}">
                         <i class="fas fa-trash-alt"></i>
                     </button>
+                {% endif %}
 
                     <div id="editModal{{ post.id }}" class="modal">
                         <div class="modal-content">

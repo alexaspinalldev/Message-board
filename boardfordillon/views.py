@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic
 from .models import Post, Comment, Reaction
@@ -9,7 +10,7 @@ class MessageList(generic.ListView):
     model = Post
     template_name = "home.html"
 
-
+@login_required
 def post_form(request):
     if request.method == 'POST':
         form = PostForm(request.POST)
@@ -27,8 +28,11 @@ def post_form(request):
 
 # views for the editing and deleting post
 
+@login_required
 def edit_post(request, post_id):
     post = get_object_or_404(Post, id=post_id)
+    if post.author != request.user:
+        return redirect('home')
     if request.method == "POST":
         form = PostForm(request.POST, instance=post)
         if form.is_valid():
@@ -40,8 +44,11 @@ def edit_post(request, post_id):
             '-date_posted')})
 
 
+@login_required
 def delete_post(request, post_id):
     post = get_object_or_404(Post, id=post_id)
+    if post.author != request.user:
+        return redirect('home')
     if request.method == "POST":
         post.delete()
         return redirect('home')

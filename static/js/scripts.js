@@ -2,6 +2,8 @@
 function openModal(modalId) {
     var modal = document.getElementById(modalId);
     modal.style.display = "block";
+    // modal.style.display = "flex"; these have less jankyness but look terrible somehow?? i think they need to be bigger/opaque background
+    // modal.style.position = "fixed";
 }
 
 // Function to close modal
