@@ -137,7 +137,23 @@ The wireframes below show the planned output for Message Board on desktop. The e
 
 ## Testing
 
-...
+### Lighthouse
+
+<details><summary>Landing</summary>
+
+![Lighthouse testing](readme/images/lighthouse-home-desktop.png)
+![Lighthouse testing](readme/images/lighthouse-home-mobile.png)
+</details>
+<details><summary>Home</summary>
+
+![Lighthouse testing](readme/images/lighthouse-main-desktop.png)
+![Lighthouse testing](readme/images/lighthouse-main-mobile.png)
+</details>
+<details><summary>Form</summary>
+
+![Lighthouse testing](readme/images/lighthouse-form-desktop.png)
+![Lighthouse testing](readme/images/lighthouse-form-mobile.png)
+</details>
 
 ## Credits
 ### Code
