@@ -65,7 +65,7 @@ Message Board features a bold and vibrant colour palette, designed to create a w
 
 <details><summary>View</summary>
 
-![Message Board colour palette](readme/images/message-board-colour-palette.png)
+![Message Board colour palette](readme/images/message-board-colours-palette.png)
 </details>
 
 ### Imagery
